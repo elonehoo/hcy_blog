@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inet.codebase.mapper.BlogMapper">
+
+    <!--  查看每一个博客得评论数目  -->
+    <select id="numberOfBlogsAndComments" resultType="com.inet.codebase.entity.Blog">
+        SELECT
+                t1.blog_id AS blogId ,
+                t1.blog_title AS blogTitle ,
+                t1.blog_advertising AS blogAdvertising ,
+                t1.blog_content AS blogContent ,
+                t1.blog_category AS blogCategory ,
+                t1.blog_sign AS blogSign ,
+                t1.blog_describe AS blogDescribe ,
+                t1.blog_views AS blogViews ,
+                t1.blog_appreciate AS blogAppreciate ,
+                t1.blog_copyright AS blogCopyright ,
+                t1.blog_comment As blogComment,
+                t1.blog_release AS blogRelease ,
+                t1.blog_establish AS blogEstablish ,
+                t1.blog_modification AS blogModification ,
+                SUM(CASE WHEN t1.blog_id = t2.comment_blogid THEN 1 ELSE 0 END) AS commentCount
+        FROM tbl_blog AS t1
+        LEFT JOIN tbl_comment AS t2
+        ON t1.blog_id = t2.comment_blogid
+        WHERE t1.blog_release = 1
+        AND t1.blog_comment = 1
+        <if test="!category.equals('')">
+            AND t1.blog_category = #{category}
+        </if>
+        GROUP BY t1.blog_id
+        LIMIT #{currentPage},#{total}
+    </select>
+    <!--  获取归档格式为 XX年XX月 X个博客  -->
+    <select id="CheckTheArchive" resultType="com.inet.codebase.utils.ArchivesUtils">
+    SELECT
+        DATE_FORMAT(
+        t1.blog_establish,
+        '%Y-%m') AS date,
+        COUNT(*) AS amount
+    FROM
+        tbl_blog AS t1
+    GROUP BY
+        DATE_FORMAT(
+        t1.blog_establish,
+        '%Y-%m')
+    ORDER BY date DESC
+    </select>
+    <!--  查看最新得博客信息  -->
+    <select id="lookAtTheLatest" resultType="com.inet.codebase.entity.Blog">
+    SELECT
+        t1.blog_id AS blogId ,
+        t1.blog_title AS blogTitle ,
+        t1.blog_advertising AS blogAdvertising ,
+        t1.blog_content AS blogContent ,
+        t1.blog_category AS blogCategory ,
+        t1.blog_sign AS blogSign ,
+        t1.blog_describe AS blogDescribe ,
+        t1.blog_views AS blogViews ,
+        t1.blog_appreciate AS blogAppreciate ,
+        t1.blog_copyright AS blogCopyright ,
+	    t1.blog_comment As blogComment,
+	    t1.blog_release AS blogRelease ,
+	    t1.blog_establish AS blogEstablish ,
+	    t1.blog_modification AS blogModification
+    FROM
+	    tbl_blog AS t1
+    ORDER BY
+	    blog_establish DESC
+	LIMIT 5
+    </select>
+    <!--  查看最热得博客  -->
+    <select id="lookAtTheHottest" resultType="com.inet.codebase.entity.Blog">
+    SELECT
+	    t1.blog_id AS blogId ,
+        t1.blog_title AS blogTitle ,
+        t1.blog_advertising AS blogAdvertising ,
+        t1.blog_content AS blogContent ,
+        t1.blog_category AS blogCategory ,
+        t1.blog_sign AS blogSign ,
+        t1.blog_describe AS blogDescribe ,
+        t1.blog_views AS blogViews ,
+        t1.blog_appreciate AS blogAppreciate ,
+        t1.blog_copyright AS blogCopyright ,
+	    t1.blog_comment As blogComment,
+	    t1.blog_release AS blogRelease ,
+	    t1.blog_establish AS blogEstablish ,
+	    t1.blog_modification AS blogModification
+    FROM
+	    tbl_blog AS t1
+    ORDER BY
+	    t1.blog_views DESC
+	LIMIT 5
+    </select>
+</mapper>
