@@ -33,7 +33,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/category")
 @CrossOrigin(origins = "*")
-@Api(value = "管理模块",tags = {"分类(种类)模块"})
+@Api(value = "管理模块",tags = {"分类(种类)模块"},description = "管理模块")
 public class CategoryController {
     @Resource
     private CategoryService categoryService;
@@ -172,7 +172,7 @@ public class CategoryController {
     @ApiImplicitParams({
             @ApiImplicitParam(name="Token",value="令牌",dataType="String", paramType = "query",example=""),
             @ApiImplicitParam(name="CurrentPage",value="当前页",dataType="Integer", paramType = "query",example="1"),
-            @ApiImplicitParam(name="Token",value="总条目数",dataType="Integer", paramType = "query",example="10"),
+            @ApiImplicitParam(name="Total",value="总条目数",dataType="Integer", paramType = "query",example="10"),
     })
     @GetMapping("/pagination")
     public Result GetPagination(@RequestParam(value = "Token",defaultValue = "") String token,

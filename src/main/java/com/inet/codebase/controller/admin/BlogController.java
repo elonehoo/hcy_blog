@@ -33,7 +33,7 @@ import java.util.*;
 @RestController
 @RequestMapping("/blog")
 @CrossOrigin
-@Api(value = "管理模块",tags = {"博客的模块"})
+@Api(value = "管理模块",tags = {"博客的模块"},description = "管理模块")
 public class BlogController {
 
     @Resource

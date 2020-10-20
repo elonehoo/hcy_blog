@@ -46,7 +46,7 @@ public class SwaggerConfig {
                         "https://github.com/xiaoxunyao" ,
                         "2414776185@qq.com"))
                 //版本
-                .version("1.0")
+                .version("15.0")
                 //运行
                 .build();
     }

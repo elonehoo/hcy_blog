@@ -23,7 +23,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/pigeonhole")
 @CrossOrigin
-@Api(value = "用户模块",tags = {"归档的用户接口"})
+@Api(value = "用户模块",tags = {"归档的用户接口"},description = "用户模块")
 public class Pigeonhole {
     @Resource
     private BlogService blogService;

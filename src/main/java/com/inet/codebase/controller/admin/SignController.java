@@ -23,7 +23,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/sign")
 @CrossOrigin
-@Api(value = "管理模块",tags = {"标记模块"})
+@Api(value = "管理模块",tags = {"标记模块"},description = "管理模块")
 public class SignController {
     @Resource
     private SignService signService;
