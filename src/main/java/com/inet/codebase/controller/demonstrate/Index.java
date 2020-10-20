@@ -9,6 +9,8 @@ import com.inet.codebase.service.BlogService;
 import com.inet.codebase.service.UserService;
 import com.inet.codebase.utils.Result;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
@@ -81,6 +83,10 @@ public class Index {
      * @return Result风格的对象
      */
     @ApiOperation("分页获取博客得具体信息")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="CurrentPage",value="页数",dataType="Interger", paramType = "query",example="1"),
+            @ApiImplicitParam(name="Total",value="条目数",dataType="Interger", paramType = "query",example="10")
+    })
     @GetMapping("/list")
     public Result GetList(@RequestParam(value = "CurrentPage",defaultValue = "1") Integer currentPage,
                           @RequestParam(value = "Total",defaultValue = "10") Integer total){
@@ -103,6 +109,9 @@ public class Index {
      * @return Result风格的对象
      */
     @ApiOperation("获取某一个博客")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="BlogId",value="博客的序号",dataType="String", paramType = "query")
+    })
     @GetMapping("/blog")
     public Result GetBlog(@RequestParam(value = "BlogId",defaultValue = "") String blogId){
         //判断博客序号是否为空

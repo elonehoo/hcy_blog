@@ -7,6 +7,8 @@ import com.inet.codebase.service.SignService;
 import com.inet.codebase.service.UserService;
 import com.inet.codebase.utils.Result;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
@@ -37,6 +39,9 @@ public class SignController {
      * @return Result风格的JSON集合对象
      */
     @ApiOperation("查询到所有的标记")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="Token",value="令牌",dataType="String", paramType = "query",example=""),
+    })
     @GetMapping("/list")
     public Result GetList(@RequestParam(value = "Token",defaultValue = "") String token){
         //判断token是否失效

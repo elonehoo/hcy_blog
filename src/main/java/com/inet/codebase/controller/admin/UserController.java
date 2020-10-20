@@ -7,6 +7,8 @@ import com.inet.codebase.service.UserService;
 import com.inet.codebase.utils.RegesUtils;
 import com.inet.codebase.utils.Result;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.*;
@@ -83,6 +85,9 @@ public class UserController {
      * @return Result风格的返回值
      */
     @ApiOperation("登录成功,获取管理员资源")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="Token",value="令牌",dataType="String", paramType = "query",example=""),
+    })
     @GetMapping("/backbone")
     public Result GetBackbone(@RequestParam(value = "Token",defaultValue = "") String token){
         //判断是否登录

@@ -15,6 +15,8 @@ import com.inet.codebase.utils.PageUtils;
 import com.inet.codebase.utils.Result;
 import com.inet.codebase.utils.UUIDUtils;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.web.bind.annotation.*;
@@ -240,6 +242,13 @@ public class BlogController {
      * @return Result风格的对象
      */
     @ApiOperation("分页展示所有博客")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="Token",value="令牌",dataType="String", paramType = "query",example=""),
+            @ApiImplicitParam(name="Release",value="发布的状态",dataType="Boolean", paramType = "query",example=""),
+            @ApiImplicitParam(name="Category",value="种类,类别",dataType="String", paramType = "query",example=""),
+            @ApiImplicitParam(name="CurrentPage",value="每条页数得条目数",dataType="Integer", paramType = "query",example="1"),
+            @ApiImplicitParam(name="Total",value="每条页数得条目数",dataType="Integer", paramType = "query",example="10"),
+    })
     @GetMapping("/list")
     public Result GetList(@RequestParam(value = "Token",defaultValue = "") String token,
                           @RequestParam(value = "Release",defaultValue = "true") Boolean release ,
@@ -276,7 +285,7 @@ public class BlogController {
      */
     @ApiOperation("删除博客请求")
     @PostMapping("/delete")
-    public Result POstDelete(@RequestBody HashMap<String, Object> map){
+    public Result PostDelete(@RequestBody HashMap<String, Object> map){
         //获取token
         String token = (String) map.get("Token");
         //判断token是否失效
@@ -353,6 +362,12 @@ public class BlogController {
      * @return Result风格的集合对象
      */
     @ApiOperation("查看所有已经发布得博客得评论数目")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="Token",value="令牌",dataType="String", paramType = "query",example=""),
+            @ApiImplicitParam(name="Category",value="种类,类别",dataType="String", paramType = "query",example=""),
+            @ApiImplicitParam(name="CurrentPage",value="每条页数得条目数",dataType="Integer", paramType = "query",example="1"),
+            @ApiImplicitParam(name="Total",value="每条页数得条目数",dataType="Integer", paramType = "query",example="10"),
+    })
     @GetMapping("/discuss")
     public Result GetDiscuss(@RequestParam(value = "Token",defaultValue = "") String token,
                              @RequestParam(value = "Category",defaultValue = "") String  category,

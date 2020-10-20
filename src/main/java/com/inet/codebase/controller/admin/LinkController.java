@@ -12,6 +12,8 @@ import com.inet.codebase.service.LinkService;
 import com.inet.codebase.service.UserService;
 import com.inet.codebase.utils.*;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
@@ -175,6 +177,11 @@ public class LinkController {
      * @return Result风格的JSON集合对象
      */
     @ApiOperation("分页展示所有的友链")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="Token",value="令牌",dataType="String", paramType = "query",example=""),
+            @ApiImplicitParam(name="CurrentPage",value="当前页",dataType="Integer", paramType = "query",example="1"),
+            @ApiImplicitParam(name="Token",value="总条目数",dataType="Integer", paramType = "query",example="10"),
+    })
     @GetMapping("/pagination")
     public Result GetList(@RequestParam(value = "Token",defaultValue = "") String token,
                           @RequestParam(value = "CurrentPage",defaultValue = "1") Integer currentPage,

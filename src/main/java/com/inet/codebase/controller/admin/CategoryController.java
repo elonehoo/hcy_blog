@@ -14,6 +14,8 @@ import com.inet.codebase.utils.SensitiveUtil;
 import com.inet.codebase.utils.UUIDUtils;
 
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
@@ -141,6 +143,9 @@ public class CategoryController {
      * @return Result风格的对象
      */
     @ApiOperation("展示所有的种类,以及每个种类的博客数目")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="Token",value="令牌",dataType="String", paramType = "query",example=""),
+    })
     @GetMapping("/list")
     public Result GetList(@RequestParam(value = "Token",defaultValue = "") String token){
         //判断token是否已经失效
@@ -164,6 +169,11 @@ public class CategoryController {
      * @return Result风格的对象
      */
     @ApiOperation("分页展示所有种类")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="Token",value="令牌",dataType="String", paramType = "query",example=""),
+            @ApiImplicitParam(name="CurrentPage",value="当前页",dataType="Integer", paramType = "query",example="1"),
+            @ApiImplicitParam(name="Token",value="总条目数",dataType="Integer", paramType = "query",example="10"),
+    })
     @GetMapping("/pagination")
     public Result GetPagination(@RequestParam(value = "Token",defaultValue = "") String token,
                                 @RequestParam(value = "CurrentPage",defaultValue = "1") Integer currentPage,
