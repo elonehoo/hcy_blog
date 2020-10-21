@@ -9,6 +9,9 @@ import com.inet.codebase.utils.RegesUtils;
 import com.inet.codebase.utils.Result;
 import com.inet.codebase.utils.UUIDUtils;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -40,6 +43,14 @@ public class Discuss {
      * @param parent 二级评论得序号
      * @return
      */
+    @ApiOperation("添加评论")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="NickName",value="评论者昵称",dataType="String", paramType = "query",example=""),
+            @ApiImplicitParam(name="MailBox",value="评论者邮箱",dataType="String", paramType = "query",example=""),
+            @ApiImplicitParam(name="Content",value="评论内容",dataType="String", paramType = "query",example=""),
+            @ApiImplicitParam(name="BlogId",value="评论得博客序号",dataType="String", paramType = "query",example=""),
+            @ApiImplicitParam(name="Parent",value="二级评论得一级评论序号",dataType="String", paramType = "query",example=""),
+    })
     @PostMapping("/addition")
     public Result PostAddition(@RequestParam(value = "NickName",defaultValue = "") String nickName,
                                @RequestParam(value = "MailBox",defaultValue = "")String mailBox,
