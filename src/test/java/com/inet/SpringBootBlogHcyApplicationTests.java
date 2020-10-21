@@ -3,6 +3,7 @@ package com.inet;
 import com.github.houbb.sensitive.word.bs.SensitiveWordBs;
 import com.inet.codebase.entity.Blog;
 import com.inet.codebase.entity.Category;
+import com.inet.codebase.entity.Page;
 import com.inet.codebase.entity.User;
 import com.inet.codebase.mapper.BlogMapper;
 import com.inet.codebase.mapper.CategoryMapper;
@@ -90,8 +91,8 @@ class SpringBootBlogHcyApplicationTests {
 
     @Test
     void contextLoads6(){
-        Map<String, Object> map = blogService.CheckTheArchive();
-        System.out.println(map.get("2019-10"));
+        List<Page> pages = blogService.CheckTheArchive();
+        System.out.println(pages);
     }
     @Test
     void contextLoads7(){
@@ -104,5 +105,11 @@ class SpringBootBlogHcyApplicationTests {
         for (Blog blog : blogs){
             System.out.println(blog);
         }
+    }
+
+    @Test
+    void contextLoads9(){
+        String email = "1111";
+        System.out.println(RegesUtils.isEmail(email));
     }
 }

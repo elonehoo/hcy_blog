@@ -2,6 +2,7 @@ package com.inet.codebase.service;
 
 import com.inet.codebase.entity.Blog;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.inet.codebase.entity.Page;
 import com.inet.codebase.utils.ArchivesUtils;
 import com.inet.codebase.utils.PageUtils;
 
@@ -34,7 +35,7 @@ public interface BlogService extends IService<Blog> {
      * @since 2020-10-04
      * @return list集合
      */
-    Map<String , Object> CheckTheArchive();
+    List<Page> CheckTheArchive();
 
     /**
      * 查看最新得博客

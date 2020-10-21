@@ -1,5 +1,8 @@
 package com.inet.codebase.utils;
 
+/**
+ * @author HCY
+ */
 public class ArchivesUtils {
     private String date;
     private Integer amount;

@@ -1,5 +1,6 @@
 package com.inet.codebase.controller.demonstrate;
 
+import com.inet.codebase.entity.Page;
 import com.inet.codebase.service.BlogService;
 import com.inet.codebase.utils.ArchivesUtils;
 import com.inet.codebase.utils.Result;
@@ -38,7 +39,7 @@ public class Pigeonhole {
     @ApiOperation("归档请求,查看写博客得日期和博客数目")
     @GetMapping("/list")
     public Result GetList(){
-        Map<String, Object> map = blogService.CheckTheArchive();
-        return new Result(map , "归档请求" , 100);
+        List<Page> pages = blogService.CheckTheArchive();
+        return new Result(pages , "归档请求" , 100);
     }
 }

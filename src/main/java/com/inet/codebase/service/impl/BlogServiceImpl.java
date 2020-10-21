@@ -3,6 +3,7 @@ package com.inet.codebase.service.impl;
 import com.alibaba.druid.sql.PagerUtils;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.inet.codebase.entity.Blog;
+import com.inet.codebase.entity.Page;
 import com.inet.codebase.mapper.BlogMapper;
 import com.inet.codebase.service.BlogService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -11,6 +12,7 @@ import com.inet.codebase.utils.PageUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -74,11 +76,11 @@ public class BlogServiceImpl extends ServiceImpl<BlogMapper, Blog> implements Bl
      * @return
      */
     @Override
-    public Map<String , Object> CheckTheArchive() {
+    public List<Page> CheckTheArchive() {
         //进行获取 XX年XX月
         List<ArchivesUtils> archivesUtilsList = blogMapper.CheckTheArchive();
         //创建存储得map对象
-        Map<String , Object> map = new HashMap<>();
+        List<Page> pages = new ArrayList<>();
         //进行循环
         for(ArchivesUtils archivesUtils : archivesUtilsList){
             //确定查询条件得容器
@@ -88,10 +90,15 @@ public class BlogServiceImpl extends ServiceImpl<BlogMapper, Blog> implements Bl
             queryWrapper.orderByDesc("blog_establish");
             //进行查询
             List<Blog> blogList = this.list(queryWrapper);
+            //创建归档对象
+            Page page = new Page();
             //存入
-            map.put(archivesUtils.getDate() , blogList);
+            page.setTime(archivesUtils.getDate());
+            //数据
+            page.setData(blogList);
+            pages.add(page);
         }
-        return map;
+        return pages;
     }
 
     /**
