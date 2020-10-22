@@ -140,7 +140,7 @@ public class Index {
         map.put( "blog" , blog );
         map.put( "comment" , comment );
         //返回值
-        return new Result(map,"查看博客得请求",101);
+        return new Result(map,"查看博客得请求",100);
     }
 
 }
