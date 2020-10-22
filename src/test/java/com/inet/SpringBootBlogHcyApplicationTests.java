@@ -1,18 +1,18 @@
 package com.inet;
 
 import com.github.houbb.sensitive.word.bs.SensitiveWordBs;
-import com.inet.codebase.entity.Blog;
-import com.inet.codebase.entity.Category;
-import com.inet.codebase.entity.Page;
-import com.inet.codebase.entity.User;
+import com.inet.codebase.entity.*;
 import com.inet.codebase.mapper.BlogMapper;
 import com.inet.codebase.mapper.CategoryMapper;
+import com.inet.codebase.mapper.CommentMapper;
 import com.inet.codebase.service.BlogService;
 import com.inet.codebase.service.CategoryService;
+import com.inet.codebase.service.CommentService;
 import com.inet.codebase.service.UserService;
 import com.inet.codebase.utils.ArchivesUtils;
 import com.inet.codebase.utils.PageUtils;
 import com.inet.codebase.utils.RegesUtils;
+import com.inet.codebase.utils.Result;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.DigestUtils;
@@ -39,6 +39,12 @@ class SpringBootBlogHcyApplicationTests {
 
     @Resource
     private BlogService blogService;
+
+    @Resource
+    private CommentService commentService;
+
+    @Resource
+    private CommentMapper commentMapper;
 
     final String text = "你好呀";
     @Test
@@ -109,7 +115,32 @@ class SpringBootBlogHcyApplicationTests {
 
     @Test
     void contextLoads9(){
-        String email = "1111";
-        System.out.println(RegesUtils.isEmail(email));
+//        String mailBox = "2414776185@qq.com";
+        String mailBox = "111";
+        boolean email = RegesUtils.isEmail(mailBox);
+        if (!email){
+            System.out.println("true");
+        }else {
+            System.out.println("false");
+        }
+    }
+
+    @Test
+    void contextLoads10(){
+        List<String> lists = new ArrayList<>();
+        lists.add("1");
+        lists.add("2");
+        lists.add("3");
+        for (String list : lists) {
+            list +="a";
+        }
+
+        System.out.println(lists);
+    }
+
+    @Test
+    void contextLoads11(){
+        List<Comment> comment = commentService.getComment("3CA16B8C6A234C98A65C205B94221CE3");
+        System.out.println(comment);
     }
 }

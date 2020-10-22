@@ -1,5 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.inet.codebase.mapper.CommentMapper">
-
+    <!--获取到一级标题-->
+    <select id="getFirstComment" resultType="com.inet.codebase.entity.Comment">
+        SELECT
+            t1.comment_id AS commentId,
+            t1.comment_nickname AS commentNickname,
+            t1.comment_mailbox AS commentMailbox,
+            t1.comment_content AS commentContent,
+            t1.comment_establish AS commentEstablish,
+            t1.comment_admin AS commentAdmin
+        FROM
+            tbl_comment AS t1
+        WHERE
+            (t1.comment_parent IS NULL
+            OR
+            t1.comment_parent = "")
+            AND
+            t1.comment_blogid = #{blogId}
+        ORDER BY
+            t1.comment_establish DESC;
+    </select>
+    <!--获取到二级及以下得标题-->
+    <select id="getComment" resultType="com.inet.codebase.entity.Comment">
+        SELECT
+            t1.comment_id AS commentId,
+            t1.comment_nickname AS commentNickname,
+            t1.comment_mailbox AS commentMailbox,
+            t1.comment_content AS commentContent,
+            t1.comment_establish AS commentEstablish,
+            t1.comment_admin AS commentAdmin
+        FROM
+            tbl_comment AS t1
+        WHERE
+            t1.comment_parent = #{parentId}
+            AND
+            t1.comment_blogid = #{blogId}
+        ORDER BY
+            t1.comment_establish DESC
+    </select>
+    <!--查询是否有子集评论-->
+    <select id="judgmentSecondaryReview" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = #{parentId}
+    </select>
 </mapper>

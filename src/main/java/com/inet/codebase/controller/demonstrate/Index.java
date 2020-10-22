@@ -4,8 +4,10 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.inet.codebase.entity.Blog;
+import com.inet.codebase.entity.Comment;
 import com.inet.codebase.entity.User;
 import com.inet.codebase.service.BlogService;
+import com.inet.codebase.service.CommentService;
 import com.inet.codebase.service.UserService;
 import com.inet.codebase.utils.Result;
 import io.swagger.annotations.Api;
@@ -15,7 +17,9 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 首页模块
@@ -32,6 +36,9 @@ public class Index {
 
     @Resource
     private UserService userService;
+
+    @Resource
+    private CommentService commentService;
 
     private final String ADMIN = "DED1C274D13E401196789124E7303C40";
 
@@ -102,7 +109,7 @@ public class Index {
     }
 
     /**
-     * 获取某一个博客
+     * 获取某一个博客+评论
      * @author HCY
      * @since 2020-10-05
      * @param blogId 博客得序号
@@ -122,15 +129,18 @@ public class Index {
         //判断blog是否为空
         if (blog == null){
             return new Result("博客可能已经被删除了,刷新试试看","查看博客得请求",101);
-        }else {
-            //进行博客得浏览次数 + 1
-            blog.setBlogViews( blog.getBlogViews() + 1 );
-            //进行修改
-            blogService.updateById(blog);
-            return new Result(blog,"查看博客得请求",101);
         }
+        Map<String, Object> map = new HashMap<>(2);
+        //进行博客得浏览次数 + 1
+        blog.setBlogViews( blog.getBlogViews() + 1 );
+        //进行修改
+        blogService.updateById(blog);
+        //查看博客的请求
+        List<Comment> comment = commentService.getComment(blogId);
+        map.put( "blog" , blog );
+        map.put( "comment" , comment );
+        //返回值
+        return new Result(map,"查看博客得请求",101);
     }
-
-
 
 }

@@ -57,6 +57,9 @@ public class Discuss {
                                @RequestParam(value = "Content",defaultValue = "")String content,
                                @RequestParam(value = "BlogId",defaultValue = "")String blogId,
                                @RequestParam(value = "Parent",defaultValue = "")String parent){
+
+        System.out.println(mailBox);
+
         //创建评论对象
         Comment comment = new Comment();
         //设置评论序号
@@ -75,7 +78,7 @@ public class Discuss {
         }
         //判断邮箱是否合法
         boolean email = RegesUtils.isEmail(mailBox);
-        if (! email){
+        if (!email){
             return new Result("添加失败,邮箱不正确","添加评论得请求",101);
         }else {
             comment.setCommentMailbox(mailBox);
