@@ -15,7 +15,7 @@ import java.util.List;
  */
 public interface CommentService extends IService<Comment> {
     /**
-     * 获取该博客的序号
+     * 获取该博客的所有的评论
      * @author HCY
      * @since 2020-10-22
      * @param blogId 博客的序号

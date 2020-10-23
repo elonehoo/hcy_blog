@@ -7,7 +7,6 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -28,7 +27,7 @@ public class CommentServiceImpl extends ServiceImpl<CommentMapper, Comment> impl
     /**
      * 获取该博客的序号
      * @param blogId 博客的序号
-     * @return
+     * @return 集合
      */
     @Override
     public List<Comment> getComment(String blogId) {
@@ -55,13 +54,8 @@ public class CommentServiceImpl extends ServiceImpl<CommentMapper, Comment> impl
      * @return 布尔值
      */
     private Boolean judgmentSecondaryReview(String commentId){
-        //获取到子集评论的个数
-        Integer review = commentMapper.judgmentSecondaryReview(commentId);
-        //判断是否有  0 ==> false ;
-        if (review == 0){
-            return false;
-        }
-        return true;
+        //获取到子集评论的个数,判断是否有子集评论  0 ==> false ;
+        return commentMapper.judgmentSecondaryReview(commentId) != 0;
     }
 
     /**
@@ -80,7 +74,7 @@ public class CommentServiceImpl extends ServiceImpl<CommentMapper, Comment> impl
             if ( judgmentSecondaryReview(comment.getCommentId()) ) {
                 comment.setCommentTwo(secondaryComments(blogId,comment.getCommentId()));
             }
-            Collections.replaceAll(comments,comments.get(i),comment);
+            Collections.replaceAll(comments, comments.get(i), comment);
         }
         return comments;
     }

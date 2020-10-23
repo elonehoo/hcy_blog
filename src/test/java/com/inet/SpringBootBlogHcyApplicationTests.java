@@ -143,4 +143,10 @@ class SpringBootBlogHcyApplicationTests {
         List<Comment> comment = commentService.getComment("3CA16B8C6A234C98A65C205B94221CE3");
         System.out.println(comment);
     }
+
+    @Test
+    void contextLoads12(){
+        int review = 0;
+        System.out.println(review != 0);
+    }
 }

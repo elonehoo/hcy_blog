@@ -41,7 +41,7 @@ public class Discuss {
      * @param content 评论者得内容
      * @param blogId 评论得博客序号
      * @param parent 二级评论得序号
-     * @return
+     * @return Result风格的返回值
      */
     @ApiOperation("添加评论")
     @ApiImplicitParams({
