@@ -1,10 +1,12 @@
 package com.inet.codebase.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.time.LocalDateTime;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
@@ -61,5 +63,9 @@ public class Message implements Serializable {
      */
     private String messageContent;
 
-
+    /**
+     * 子集评论
+     */
+    @TableField(exist = false)
+    private List<Message> messageList;
 }

@@ -19,4 +19,27 @@
         ORDER BY
             message_establish DESC
     </select>
+
+    <!--判断改留言是否有子集-->
+    <select id="getCountMessage" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM tbl_message WHERE message_parent = #{messageId}
+    </select>
+
+    <!--查找子集-->
+    <select id="getListTwoMessage" resultType="com.inet.codebase.entity.Message">
+        SELECT
+            message_id AS messageId,
+            message_nickname AS messageNickname,
+            message_mailbox AS messageMailbox,
+            message_establish AS messageEstablish,
+            message_parent AS messageParent,
+            message_admin AS messageAdmin,
+            message_content AS messageContent
+        FROM
+            tbl_message
+        WHERE
+            message_parent = #{messageId}
+        ORDER BY
+            message_establish DESC
+    </select>
 </mapper>

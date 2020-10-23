@@ -95,6 +95,11 @@ public class Guestbook {
         }
     }
 
+    @ApiOperation("获取所有的留言")
+    @GetMapping("/guestbook")
+    public Result GetGuestbook(){
+        return new Result(messageService.getMessage(),"获取所有的留言",100);
+    }
 
 
 }
