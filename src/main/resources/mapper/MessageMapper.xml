@@ -2,4 +2,21 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.inet.codebase.mapper.MessageMapper">
 
+    <!--获取到所有的一级留言-->
+    <select id="getListMessage" resultType="com.inet.codebase.entity.Message">
+        SELECT
+            message_id AS messageId,
+            message_nickname AS messageNickname,
+            message_mailbox AS messageMailbox,
+            message_establish AS messageEstablish,
+            message_parent AS messageParent,
+            message_admin AS messageAdmin,
+            message_content AS messageContent
+        FROM
+            tbl_message
+        WHERE
+            ( message_parent IS NULL OR message_parent = "" )
+        ORDER BY
+            message_establish DESC
+    </select>
 </mapper>

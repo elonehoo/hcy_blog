@@ -56,5 +56,10 @@ public class Message implements Serializable {
      */
     private Boolean messageAdmin;
 
+    /**
+     * 留言内容
+     */
+    private String messageContent;
+
 
 }

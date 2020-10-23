@@ -118,10 +118,11 @@ class SpringBootBlogHcyApplicationTests {
 //        String mailBox = "2414776185@qq.com";
         String mailBox = "111";
         boolean email = RegesUtils.isEmail(mailBox);
+        System.out.println("email" + email);
         if (!email){
-            System.out.println("true");
+            System.out.println("1");
         }else {
-            System.out.println("false");
+            System.out.println("2");
         }
     }
 
