@@ -8,8 +8,10 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.github.houbb.sensitive.word.bs.SensitiveWordBs;
 import com.inet.codebase.entity.Blog;
 import com.inet.codebase.entity.Category;
+import com.inet.codebase.entity.Comment;
 import com.inet.codebase.entity.User;
 import com.inet.codebase.service.BlogService;
+import com.inet.codebase.service.CommentService;
 import com.inet.codebase.service.UserService;
 import com.inet.codebase.utils.PageUtils;
 import com.inet.codebase.utils.Result;
@@ -40,6 +42,8 @@ public class BlogController {
     private BlogService blogService;
     @Resource
     private UserService userService;
+    @Resource
+    private CommentService commentService;
 
     /**
      * 进行新增博客
@@ -308,6 +312,14 @@ public class BlogController {
         //进行删除操作
         boolean judgment = blogService.removeByIds(list);
         if (judgment){
+            //删除评论
+            for (String blogId : list){
+                //设置删除评论的条件
+                QueryWrapper<Comment> queryWrapper = new QueryWrapper<>();
+                queryWrapper.eq("comment_blogid",blogId);
+                //进行删除操作
+                commentService.remove(queryWrapper);
+            }
             return new Result("删除成功","删除博客请求",100);
         }else {
             return new Result("删除失败","删除博客请求",104);

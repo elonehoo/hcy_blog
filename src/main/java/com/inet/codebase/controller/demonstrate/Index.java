@@ -135,10 +135,12 @@ public class Index {
         blog.setBlogViews( blog.getBlogViews() + 1 );
         //进行修改
         blogService.updateById(blog);
-        //查看博客的请求
-        List<Comment> comment = commentService.getComment(blogId);
+        if (blog.getBlogComment()){
+            //查看博客的评论请求
+            List<Comment> comment = commentService.getComment(blogId);
+            map.put( "comment" , comment );
+        }
         map.put( "blog" , blog );
-        map.put( "comment" , comment );
         //返回值
         return new Result(map,"查看博客得请求",100);
     }

@@ -95,9 +95,15 @@ public class Guestbook {
         }
     }
 
+    /**
+     * 获取所有的博客
+     * @author HCY
+     * @since 2020-10-23
+     * @return Result风格的返回值
+     */
     @ApiOperation("获取所有的留言")
     @GetMapping("/guestbook")
-    public Result GetGuestbook(){
+    public Result getGuestbook(){
         return new Result(messageService.getMessage(),"获取所有的留言",100);
     }
 
