@@ -1,103 +1,592 @@
-2020-10-24 19:10:20.170  INFO 19912 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Starting SpringBootBlogHcyApplicationTests on DESKTOP-TSJVEJ5 with PID 19912 (started by HCY in D:\8.items\blog_HCY\BEBackEnd\spring-boot-blog-hcy)
-2020-10-24 19:10:20.217 DEBUG 19912 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
-2020-10-24 19:10:20.217  INFO 19912 --- [main] c.i.SpringBootBlogHcyApplicationTests    : No active profile set, falling back to default profiles: default
-2020-10-24 19:10:23.348  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.354  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.354  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.355  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.365  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.366  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Boolean, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.366  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.366  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.367  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.387  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.391  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.391  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.392  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.404  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.404  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.404  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.405  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.409  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.409  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.413  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.413  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.414  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.414  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.414  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.419  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.420  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.420  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.420  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.425  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.430  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Interger, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.431  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Interger, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.439  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.440  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.440  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.455  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.458  WARN 19912 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
-2020-10-24 19:10:23.478  INFO 19912 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Started SpringBootBlogHcyApplicationTests in 3.598 seconds (JVM running for 4.528)
-2020-10-24 19:10:24.270 DEBUG 19912 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==>  Preparing: SELECT t1.category_id AS categoryId, t1.category_name AS categoryName, t1.category_establish AS categoryEstablish, t1.category_modification AS categoryModification, SUM( CASE WHEN t1.category_id = t2.blog_category THEN 1 ELSE 0 END ) AS blogCount FROM tbl_category AS t1 LEFT JOIN tbl_blog AS t2 ON t1.category_id = t2.blog_category GROUP BY t1.category_id
-2020-10-24 19:10:24.289 DEBUG 19912 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==> Parameters: 
-2020-10-24 19:10:24.557 DEBUG 19912 --- [main] c.i.c.m.CategoryMapper.listAddCount      : <==      Total: 4
-2020-10-24 19:10:24.596 DEBUG 19912 --- [main] c.i.c.m.CategoryMapper.deleteBatchIds    : ==>  Preparing: DELETE FROM tbl_category WHERE category_id IN ( ? , ? )
-2020-10-24 19:10:24.596 DEBUG 19912 --- [main] c.i.c.m.CategoryMapper.deleteBatchIds    : ==> Parameters: 2FE1F4ABEF5347DCB098C4D00BDA16B3(String), ACA2CCF1B1D340FB8593185FCDA378A6(String)
-2020-10-24 19:10:24.617 DEBUG 19912 --- [main] c.i.c.m.CategoryMapper.deleteBatchIds    : <==    Updates: 0
-2020-10-24 19:10:24.620 DEBUG 19912 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==>  Preparing: SELECT t1.category_id AS categoryId, t1.category_name AS categoryName, t1.category_establish AS categoryEstablish, t1.category_modification AS categoryModification, SUM( CASE WHEN t1.category_id = t2.blog_category THEN 1 ELSE 0 END ) AS blogCount FROM tbl_category AS t1 LEFT JOIN tbl_blog AS t2 ON t1.category_id = t2.blog_category GROUP BY t1.category_id
-2020-10-24 19:10:24.621 DEBUG 19912 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==> Parameters: 
-2020-10-24 19:10:24.727 DEBUG 19912 --- [main] c.i.c.m.CategoryMapper.listAddCount      : <==      Total: 4
-2020-10-24 19:10:24.751 DEBUG 19912 --- [main] c.i.c.m.B.numberOfBlogsAndComments       : ==>  Preparing: SELECT t1.blog_id AS blogId , t1.blog_title AS blogTitle , t1.blog_advertising AS blogAdvertising , t1.blog_content AS blogContent , t1.blog_category AS blogCategory , t1.blog_sign AS blogSign , t1.blog_describe AS blogDescribe , t1.blog_views AS blogViews , t1.blog_appreciate AS blogAppreciate , t1.blog_copyright AS blogCopyright , t1.blog_comment As blogComment, t1.blog_release AS blogRelease , t1.blog_establish AS blogEstablish , t1.blog_modification AS blogModification , SUM(CASE WHEN t1.blog_id = t2.comment_blogid THEN 1 ELSE 0 END) AS commentCount FROM tbl_blog AS t1 LEFT JOIN tbl_comment AS t2 ON t1.blog_id = t2.comment_blogid WHERE t1.blog_release = 1 AND t1.blog_comment = 1 GROUP BY t1.blog_id LIMIT ?,?
-2020-10-24 19:10:24.751 DEBUG 19912 --- [main] c.i.c.m.B.numberOfBlogsAndComments       : ==> Parameters: 0(Integer), 10(Integer)
-2020-10-24 19:10:24.915 DEBUG 19912 --- [main] c.i.c.m.B.numberOfBlogsAndComments       : <==      Total: 5
-2020-10-24 19:10:24.923 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.selectCount      : ==>  Preparing: SELECT COUNT( 1 ) FROM tbl_blog
-2020-10-24 19:10:24.924 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.selectCount      : ==> Parameters: 
-2020-10-24 19:10:24.944 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.selectCount      : <==      Total: 1
-2020-10-24 19:10:24.948 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.CheckTheArchive  : ==>  Preparing: SELECT DATE_FORMAT( t1.blog_establish, '%Y-%m') AS date, COUNT(*) AS amount FROM tbl_blog AS t1 GROUP BY DATE_FORMAT( t1.blog_establish, '%Y-%m') ORDER BY date DESC
-2020-10-24 19:10:24.948 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.CheckTheArchive  : ==> Parameters: 
-2020-10-24 19:10:24.967 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.CheckTheArchive  : <==      Total: 4
-2020-10-24 19:10:24.974 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
-2020-10-24 19:10:24.974 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-10%(String)
-2020-10-24 19:10:24.997 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 3
-2020-10-24 19:10:24.998 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
-2020-10-24 19:10:24.999 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-09%(String)
-2020-10-24 19:10:25.020 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 3
-2020-10-24 19:10:25.022 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
-2020-10-24 19:10:25.022 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-08%(String)
-2020-10-24 19:10:25.046 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 2
-2020-10-24 19:10:25.047 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
-2020-10-24 19:10:25.047 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-07%(String)
-2020-10-24 19:10:25.067 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 1
-2020-10-24 19:10:25.072 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.lookAtTheLatest  : ==>  Preparing: SELECT t1.blog_id AS blogId , t1.blog_title AS blogTitle , t1.blog_advertising AS blogAdvertising , t1.blog_content AS blogContent , t1.blog_category AS blogCategory , t1.blog_sign AS blogSign , t1.blog_describe AS blogDescribe , t1.blog_views AS blogViews , t1.blog_appreciate AS blogAppreciate , t1.blog_copyright AS blogCopyright , t1.blog_comment As blogComment, t1.blog_release AS blogRelease , t1.blog_establish AS blogEstablish , t1.blog_modification AS blogModification FROM tbl_blog AS t1 ORDER BY blog_establish DESC LIMIT 5
-2020-10-24 19:10:25.073 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.lookAtTheLatest  : ==> Parameters: 
-2020-10-24 19:10:25.103 DEBUG 19912 --- [main] c.i.c.mapper.BlogMapper.lookAtTheLatest  : <==      Total: 5
-2020-10-24 19:10:25.107 DEBUG 19912 --- [main] c.i.c.m.BlogMapper.lookAtTheHottest      : ==>  Preparing: SELECT t1.blog_id AS blogId , t1.blog_title AS blogTitle , t1.blog_advertising AS blogAdvertising , t1.blog_content AS blogContent , t1.blog_category AS blogCategory , t1.blog_sign AS blogSign , t1.blog_describe AS blogDescribe , t1.blog_views AS blogViews , t1.blog_appreciate AS blogAppreciate , t1.blog_copyright AS blogCopyright , t1.blog_comment As blogComment, t1.blog_release AS blogRelease , t1.blog_establish AS blogEstablish , t1.blog_modification AS blogModification FROM tbl_blog AS t1 ORDER BY t1.blog_views DESC LIMIT 5
-2020-10-24 19:10:25.107 DEBUG 19912 --- [main] c.i.c.m.BlogMapper.lookAtTheHottest      : ==> Parameters: 
-2020-10-24 19:10:25.143 DEBUG 19912 --- [main] c.i.c.m.BlogMapper.lookAtTheHottest      : <==      Total: 5
-2020-10-24 19:10:25.157 DEBUG 19912 --- [main] c.i.c.m.CommentMapper.getFirstComment    : ==>  Preparing: SELECT t1.comment_id AS commentId, t1.comment_nickname AS commentNickname, t1.comment_mailbox AS commentMailbox, t1.comment_content AS commentContent, t1.comment_establish AS commentEstablish, t1.comment_admin AS commentAdmin FROM tbl_comment AS t1 WHERE (t1.comment_parent IS NULL OR t1.comment_parent = "") AND t1.comment_blogid = ? ORDER BY t1.comment_establish DESC;
-2020-10-24 19:10:25.158 DEBUG 19912 --- [main] c.i.c.m.CommentMapper.getFirstComment    : ==> Parameters: 3CA16B8C6A234C98A65C205B94221CE3(String)
-2020-10-24 19:10:25.181 DEBUG 19912 --- [main] c.i.c.m.CommentMapper.getFirstComment    : <==      Total: 6
-2020-10-24 19:10:25.182 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
-2020-10-24 19:10:25.182 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 06F9DABFACE5422798C55953517750F2(String)
-2020-10-24 19:10:25.202 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
-2020-10-24 19:10:25.203 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
-2020-10-24 19:10:25.203 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 507A216623AA40ACAA645EFA3A2DCEC4(String)
-2020-10-24 19:10:25.222 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
-2020-10-24 19:10:25.224 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
-2020-10-24 19:10:25.224 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 0462E46326294151901FEF3055C03844(String)
-2020-10-24 19:10:25.258 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
-2020-10-24 19:10:25.260 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
-2020-10-24 19:10:25.260 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 6223DDCF7F1E4B1CA89AD80D645D7B43(String)
-2020-10-24 19:10:25.279 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
-2020-10-24 19:10:25.280 DEBUG 19912 --- [main] c.i.c.mapper.CommentMapper.getComment    : ==>  Preparing: SELECT t1.comment_id AS commentId, t1.comment_nickname AS commentNickname, t1.comment_mailbox AS commentMailbox, t1.comment_content AS commentContent, t1.comment_establish AS commentEstablish, t1.comment_admin AS commentAdmin FROM tbl_comment AS t1 WHERE t1.comment_parent = ? AND t1.comment_blogid = ? ORDER BY t1.comment_establish DESC
-2020-10-24 19:10:25.280 DEBUG 19912 --- [main] c.i.c.mapper.CommentMapper.getComment    : ==> Parameters: 6223DDCF7F1E4B1CA89AD80D645D7B43(String), 3CA16B8C6A234C98A65C205B94221CE3(String)
-2020-10-24 19:10:25.301 DEBUG 19912 --- [main] c.i.c.mapper.CommentMapper.getComment    : <==      Total: 1
-2020-10-24 19:10:25.302 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
-2020-10-24 19:10:25.302 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 717C9364AA624C75BA48ED81013EFC84(String)
-2020-10-24 19:10:25.370 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
-2020-10-24 19:10:25.371 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
-2020-10-24 19:10:25.371 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: A09F13651CDB4651B9A7ADD73825305E(String)
-2020-10-24 19:10:25.432 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
-2020-10-24 19:10:25.433 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
-2020-10-24 19:10:25.434 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: B006C779B8F94B809E8B8F79544C78AA(String)
-2020-10-24 19:10:25.453 DEBUG 19912 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 09:42:39.329  INFO 15752 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Starting SpringBootBlogHcyApplicationTests on DESKTOP-TSJVEJ5 with PID 15752 (started by HCY in D:\8.items\blog_HCY\BEBackEnd\spring-boot-blog-hcy)
+2020-10-25 09:42:39.365 DEBUG 15752 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-25 09:42:39.365  INFO 15752 --- [main] c.i.SpringBootBlogHcyApplicationTests    : No active profile set, falling back to default profiles: default
+2020-10-25 09:42:42.030  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.036  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.037  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.037  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.050  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.051  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Boolean, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.052  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.052  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.053  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.077  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.080  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.080  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.081  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.093  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.093  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.093  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.094  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.097  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.098  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.102  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.102  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.103  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.103  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.104  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.109  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.110  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.110  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.111  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.117  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.123  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Interger, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.123  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Interger, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.133  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.133  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.133  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.150  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.153  WARN 15752 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 09:42:42.170  INFO 15752 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Started SpringBootBlogHcyApplicationTests in 3.06 seconds (JVM running for 3.727)
+2020-10-25 09:42:42.851 DEBUG 15752 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==>  Preparing: SELECT t1.category_id AS categoryId, t1.category_name AS categoryName, t1.category_establish AS categoryEstablish, t1.category_modification AS categoryModification, SUM( CASE WHEN t1.category_id = t2.blog_category THEN 1 ELSE 0 END ) AS blogCount FROM tbl_category AS t1 LEFT JOIN tbl_blog AS t2 ON t1.category_id = t2.blog_category GROUP BY t1.category_id
+2020-10-25 09:42:42.874 DEBUG 15752 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==> Parameters: 
+2020-10-25 09:42:42.971 DEBUG 15752 --- [main] c.i.c.m.CategoryMapper.listAddCount      : <==      Total: 4
+2020-10-25 09:42:43.047 DEBUG 15752 --- [main] c.i.c.m.CategoryMapper.deleteBatchIds    : ==>  Preparing: DELETE FROM tbl_category WHERE category_id IN ( ? , ? )
+2020-10-25 09:42:43.048 DEBUG 15752 --- [main] c.i.c.m.CategoryMapper.deleteBatchIds    : ==> Parameters: 2FE1F4ABEF5347DCB098C4D00BDA16B3(String), ACA2CCF1B1D340FB8593185FCDA378A6(String)
+2020-10-25 09:42:43.076 DEBUG 15752 --- [main] c.i.c.m.CategoryMapper.deleteBatchIds    : <==    Updates: 0
+2020-10-25 09:42:43.080 DEBUG 15752 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==>  Preparing: SELECT t1.category_id AS categoryId, t1.category_name AS categoryName, t1.category_establish AS categoryEstablish, t1.category_modification AS categoryModification, SUM( CASE WHEN t1.category_id = t2.blog_category THEN 1 ELSE 0 END ) AS blogCount FROM tbl_category AS t1 LEFT JOIN tbl_blog AS t2 ON t1.category_id = t2.blog_category GROUP BY t1.category_id
+2020-10-25 09:42:43.081 DEBUG 15752 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==> Parameters: 
+2020-10-25 09:42:43.147 DEBUG 15752 --- [main] c.i.c.m.CategoryMapper.listAddCount      : <==      Total: 4
+2020-10-25 09:42:43.157 DEBUG 15752 --- [main] c.i.c.m.B.numberOfBlogsAndComments       : ==>  Preparing: SELECT t1.blog_id AS blogId , t1.blog_title AS blogTitle , t1.blog_advertising AS blogAdvertising , t1.blog_content AS blogContent , t1.blog_category AS blogCategory , t1.blog_sign AS blogSign , t1.blog_describe AS blogDescribe , t1.blog_views AS blogViews , t1.blog_appreciate AS blogAppreciate , t1.blog_copyright AS blogCopyright , t1.blog_comment As blogComment, t1.blog_release AS blogRelease , t1.blog_establish AS blogEstablish , t1.blog_modification AS blogModification , SUM(CASE WHEN t1.blog_id = t2.comment_blogid THEN 1 ELSE 0 END) AS commentCount FROM tbl_blog AS t1 LEFT JOIN tbl_comment AS t2 ON t1.blog_id = t2.comment_blogid WHERE t1.blog_release = 1 AND t1.blog_comment = 1 GROUP BY t1.blog_id LIMIT ?,?
+2020-10-25 09:42:43.157 DEBUG 15752 --- [main] c.i.c.m.B.numberOfBlogsAndComments       : ==> Parameters: 0(Integer), 10(Integer)
+2020-10-25 09:42:43.266 DEBUG 15752 --- [main] c.i.c.m.B.numberOfBlogsAndComments       : <==      Total: 5
+2020-10-25 09:42:43.273 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.selectCount      : ==>  Preparing: SELECT COUNT( 1 ) FROM tbl_blog
+2020-10-25 09:42:43.273 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.selectCount      : ==> Parameters: 
+2020-10-25 09:42:43.302 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.selectCount      : <==      Total: 1
+2020-10-25 09:42:43.306 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.CheckTheArchive  : ==>  Preparing: SELECT DATE_FORMAT( t1.blog_establish, '%Y-%m') AS date, COUNT(*) AS amount FROM tbl_blog AS t1 GROUP BY DATE_FORMAT( t1.blog_establish, '%Y-%m') ORDER BY date DESC
+2020-10-25 09:42:43.306 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.CheckTheArchive  : ==> Parameters: 
+2020-10-25 09:42:43.336 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.CheckTheArchive  : <==      Total: 4
+2020-10-25 09:42:43.342 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
+2020-10-25 09:42:43.343 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-10%(String)
+2020-10-25 09:42:43.371 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 3
+2020-10-25 09:42:43.373 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
+2020-10-25 09:42:43.373 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-09%(String)
+2020-10-25 09:42:43.404 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 3
+2020-10-25 09:42:43.405 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
+2020-10-25 09:42:43.405 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-08%(String)
+2020-10-25 09:42:43.435 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 2
+2020-10-25 09:42:43.436 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
+2020-10-25 09:42:43.437 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-07%(String)
+2020-10-25 09:42:43.466 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 1
+2020-10-25 09:42:43.469 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.lookAtTheLatest  : ==>  Preparing: SELECT t1.blog_id AS blogId , t1.blog_title AS blogTitle , t1.blog_advertising AS blogAdvertising , t1.blog_content AS blogContent , t1.blog_category AS blogCategory , t1.blog_sign AS blogSign , t1.blog_describe AS blogDescribe , t1.blog_views AS blogViews , t1.blog_appreciate AS blogAppreciate , t1.blog_copyright AS blogCopyright , t1.blog_comment As blogComment, t1.blog_release AS blogRelease , t1.blog_establish AS blogEstablish , t1.blog_modification AS blogModification FROM tbl_blog AS t1 ORDER BY blog_establish DESC LIMIT 5
+2020-10-25 09:42:43.470 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.lookAtTheLatest  : ==> Parameters: 
+2020-10-25 09:42:43.511 DEBUG 15752 --- [main] c.i.c.mapper.BlogMapper.lookAtTheLatest  : <==      Total: 5
+2020-10-25 09:42:43.522 DEBUG 15752 --- [main] c.i.c.m.BlogMapper.lookAtTheHottest      : ==>  Preparing: SELECT t1.blog_id AS blogId , t1.blog_title AS blogTitle , t1.blog_advertising AS blogAdvertising , t1.blog_content AS blogContent , t1.blog_category AS blogCategory , t1.blog_sign AS blogSign , t1.blog_describe AS blogDescribe , t1.blog_views AS blogViews , t1.blog_appreciate AS blogAppreciate , t1.blog_copyright AS blogCopyright , t1.blog_comment As blogComment, t1.blog_release AS blogRelease , t1.blog_establish AS blogEstablish , t1.blog_modification AS blogModification FROM tbl_blog AS t1 ORDER BY t1.blog_views DESC LIMIT 5
+2020-10-25 09:42:43.523 DEBUG 15752 --- [main] c.i.c.m.BlogMapper.lookAtTheHottest      : ==> Parameters: 
+2020-10-25 09:42:43.553 DEBUG 15752 --- [main] c.i.c.m.BlogMapper.lookAtTheHottest      : <==      Total: 5
+2020-10-25 09:42:43.564 DEBUG 15752 --- [main] c.i.c.m.CommentMapper.getFirstComment    : ==>  Preparing: SELECT t1.comment_id AS commentId, t1.comment_nickname AS commentNickname, t1.comment_mailbox AS commentMailbox, t1.comment_content AS commentContent, t1.comment_establish AS commentEstablish, t1.comment_admin AS commentAdmin FROM tbl_comment AS t1 WHERE (t1.comment_parent IS NULL OR t1.comment_parent = "") AND t1.comment_blogid = ? ORDER BY t1.comment_establish DESC;
+2020-10-25 09:42:43.564 DEBUG 15752 --- [main] c.i.c.m.CommentMapper.getFirstComment    : ==> Parameters: 3CA16B8C6A234C98A65C205B94221CE3(String)
+2020-10-25 09:42:43.594 DEBUG 15752 --- [main] c.i.c.m.CommentMapper.getFirstComment    : <==      Total: 6
+2020-10-25 09:42:43.594 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 09:42:43.594 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: B10685ACF00948659525F2235B09B264(String)
+2020-10-25 09:42:43.624 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 09:42:43.624 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 09:42:43.624 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 06F9DABFACE5422798C55953517750F2(String)
+2020-10-25 09:42:43.652 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 09:42:43.653 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 09:42:43.653 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 507A216623AA40ACAA645EFA3A2DCEC4(String)
+2020-10-25 09:42:43.682 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 09:42:43.683 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 09:42:43.683 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 0462E46326294151901FEF3055C03844(String)
+2020-10-25 09:42:43.712 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 09:42:43.713 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 09:42:43.713 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: A09F13651CDB4651B9A7ADD73825305E(String)
+2020-10-25 09:42:43.741 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 09:42:43.742 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 09:42:43.742 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: B006C779B8F94B809E8B8F79544C78AA(String)
+2020-10-25 09:42:43.771 DEBUG 15752 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 09:42:43.797 DEBUG 15752 --- [main] c.i.c.mapper.LinkMapper.selectList       : ==>  Preparing: SELECT link_id,link_modification,link_url,link_establish,link_picture,link_name FROM tbl_link
+2020-10-25 09:42:43.797 DEBUG 15752 --- [main] c.i.c.mapper.LinkMapper.selectList       : ==> Parameters: 
+2020-10-25 09:42:43.827 DEBUG 15752 --- [main] c.i.c.mapper.LinkMapper.selectList       : <==      Total: 4
+2020-10-25 10:43:27.049  INFO 6452 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Starting SpringBootBlogHcyApplicationTests on DESKTOP-TSJVEJ5 with PID 6452 (started by HCY in D:\8.items\blog_HCY\BEBackEnd\spring-boot-blog-hcy)
+2020-10-25 10:43:27.050 DEBUG 6452 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-25 10:43:27.050  INFO 6452 --- [main] c.i.SpringBootBlogHcyApplicationTests    : No active profile set, falling back to default profiles: default
+2020-10-25 10:43:29.525  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.529  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.530  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.530  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.537  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.538  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Boolean, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.538  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.538  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.538  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.553  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.556  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.556  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.557  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.567  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.567  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.567  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.568  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.570  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.571  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.574  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.574  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.575  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.575  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.575  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.579  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.579  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.579  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.579  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.584  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.588  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Interger, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.588  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Interger, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.595  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.595  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.595  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.603  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.603  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.605  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.606  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.606  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.609  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.609  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.610  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.610  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.610  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.614  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.617  WARN 6452 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:43:29.635  INFO 6452 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Started SpringBootBlogHcyApplicationTests in 2.797 seconds (JVM running for 3.541)
+2020-10-25 10:43:59.513  INFO 11176 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Starting SpringBootBlogHcyApplicationTests on DESKTOP-TSJVEJ5 with PID 11176 (started by HCY in D:\8.items\blog_HCY\BEBackEnd\spring-boot-blog-hcy)
+2020-10-25 10:43:59.513 DEBUG 11176 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-25 10:43:59.513  INFO 11176 --- [main] c.i.SpringBootBlogHcyApplicationTests    : No active profile set, falling back to default profiles: default
+2020-10-25 10:44:02.005  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.009  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.010  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.010  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.017  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.018  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Boolean, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.018  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.018  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.018  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.034  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.036  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.037  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.037  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.047  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.048  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.048  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.048  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.051  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.051  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.056  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.056  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.057  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.057  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.057  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.061  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.061  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.061  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.062  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.066  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.070  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Interger, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.071  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Interger, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.077  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.078  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.078  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.087  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.087  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.090  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.090  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.090  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.093  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.094  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.094  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.094  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.094  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.098  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.101  WARN 11176 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 10:44:02.120  INFO 11176 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Started SpringBootBlogHcyApplicationTests in 2.84 seconds (JVM running for 3.581)
+2020-10-25 14:33:57.416  INFO 19748 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Starting SpringBootBlogHcyApplicationTests on DESKTOP-TSJVEJ5 with PID 19748 (started by HCY in D:\8.items\blog_HCY\BEBackEnd\spring-boot-blog-hcy)
+2020-10-25 14:33:57.416 DEBUG 19748 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-25 14:33:57.417  INFO 19748 --- [main] c.i.SpringBootBlogHcyApplicationTests    : No active profile set, falling back to default profiles: default
+2020-10-25 14:33:59.891  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.895  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.896  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.896  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.904  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.904  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Boolean, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.905  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.905  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.905  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.923  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.926  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.926  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.927  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.938  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.938  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.939  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.939  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.942  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.942  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.947  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.948  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.949  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.949  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.949  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.954  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.955  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.955  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.955  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.960  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.965  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Interger, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.965  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Interger, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.972  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.972  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.973  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.984  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.984  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.987  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.988  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.988  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.994  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.995  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.998  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.998  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:33:59.998  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:34:00.002  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:34:00.002  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:34:00.002  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:34:00.003  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:34:00.003  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:34:00.006  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:34:00.006  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:34:00.006  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:34:00.007  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:34:00.007  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:34:00.007  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:34:00.015  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:34:00.018  WARN 19748 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 14:34:00.037  INFO 19748 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Started SpringBootBlogHcyApplicationTests in 2.835 seconds (JVM running for 3.537)
+2020-10-25 14:34:00.532 DEBUG 19748 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==>  Preparing: SELECT t1.category_id AS categoryId, t1.category_name AS categoryName, t1.category_establish AS categoryEstablish, t1.category_modification AS categoryModification, SUM( CASE WHEN t1.category_id = t2.blog_category THEN 1 ELSE 0 END ) AS blogCount FROM tbl_category AS t1 LEFT JOIN tbl_blog AS t2 ON t1.category_id = t2.blog_category GROUP BY t1.category_id
+2020-10-25 14:34:00.549 DEBUG 19748 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==> Parameters: 
+2020-10-25 14:34:00.640 DEBUG 19748 --- [main] c.i.c.m.CategoryMapper.listAddCount      : <==      Total: 4
+2020-10-25 14:34:00.665 DEBUG 19748 --- [main] c.i.c.m.CategoryMapper.deleteBatchIds    : ==>  Preparing: DELETE FROM tbl_category WHERE category_id IN ( ? , ? )
+2020-10-25 14:34:00.666 DEBUG 19748 --- [main] c.i.c.m.CategoryMapper.deleteBatchIds    : ==> Parameters: 2FE1F4ABEF5347DCB098C4D00BDA16B3(String), ACA2CCF1B1D340FB8593185FCDA378A6(String)
+2020-10-25 14:34:00.687 DEBUG 19748 --- [main] c.i.c.m.CategoryMapper.deleteBatchIds    : <==    Updates: 0
+2020-10-25 14:34:00.690 DEBUG 19748 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==>  Preparing: SELECT t1.category_id AS categoryId, t1.category_name AS categoryName, t1.category_establish AS categoryEstablish, t1.category_modification AS categoryModification, SUM( CASE WHEN t1.category_id = t2.blog_category THEN 1 ELSE 0 END ) AS blogCount FROM tbl_category AS t1 LEFT JOIN tbl_blog AS t2 ON t1.category_id = t2.blog_category GROUP BY t1.category_id
+2020-10-25 14:34:00.690 DEBUG 19748 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==> Parameters: 
+2020-10-25 14:34:00.760 DEBUG 19748 --- [main] c.i.c.m.CategoryMapper.listAddCount      : <==      Total: 4
+2020-10-25 14:34:00.770 DEBUG 19748 --- [main] c.i.c.m.B.numberOfBlogsAndComments       : ==>  Preparing: SELECT t1.blog_id AS blogId , t1.blog_title AS blogTitle , t1.blog_advertising AS blogAdvertising , t1.blog_content AS blogContent , t1.blog_category AS blogCategory , t1.blog_sign AS blogSign , t1.blog_describe AS blogDescribe , t1.blog_views AS blogViews , t1.blog_appreciate AS blogAppreciate , t1.blog_copyright AS blogCopyright , t1.blog_comment As blogComment, t1.blog_release AS blogRelease , t1.blog_establish AS blogEstablish , t1.blog_modification AS blogModification , SUM(CASE WHEN t1.blog_id = t2.comment_blogid THEN 1 ELSE 0 END) AS commentCount FROM tbl_blog AS t1 LEFT JOIN tbl_comment AS t2 ON t1.blog_id = t2.comment_blogid WHERE t1.blog_release = 1 AND t1.blog_comment = 1 GROUP BY t1.blog_id LIMIT ?,?
+2020-10-25 14:34:00.770 DEBUG 19748 --- [main] c.i.c.m.B.numberOfBlogsAndComments       : ==> Parameters: 0(Integer), 10(Integer)
+2020-10-25 14:34:00.875 DEBUG 19748 --- [main] c.i.c.m.B.numberOfBlogsAndComments       : <==      Total: 5
+2020-10-25 14:34:00.886 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.selectCount      : ==>  Preparing: SELECT COUNT( 1 ) FROM tbl_blog
+2020-10-25 14:34:00.886 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.selectCount      : ==> Parameters: 
+2020-10-25 14:34:00.908 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.selectCount      : <==      Total: 1
+2020-10-25 14:34:00.911 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.CheckTheArchive  : ==>  Preparing: SELECT DATE_FORMAT( t1.blog_establish, '%Y-%m') AS date, COUNT(*) AS amount FROM tbl_blog AS t1 GROUP BY DATE_FORMAT( t1.blog_establish, '%Y-%m') ORDER BY date DESC
+2020-10-25 14:34:00.912 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.CheckTheArchive  : ==> Parameters: 
+2020-10-25 14:34:00.934 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.CheckTheArchive  : <==      Total: 4
+2020-10-25 14:34:00.940 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
+2020-10-25 14:34:00.940 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-10%(String)
+2020-10-25 14:34:00.964 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 3
+2020-10-25 14:34:00.965 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
+2020-10-25 14:34:00.965 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-09%(String)
+2020-10-25 14:34:00.989 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 3
+2020-10-25 14:34:00.990 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
+2020-10-25 14:34:00.990 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-08%(String)
+2020-10-25 14:34:01.016 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 2
+2020-10-25 14:34:01.021 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
+2020-10-25 14:34:01.022 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-07%(String)
+2020-10-25 14:34:01.045 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 1
+2020-10-25 14:34:01.049 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.lookAtTheLatest  : ==>  Preparing: SELECT t1.blog_id AS blogId , t1.blog_title AS blogTitle , t1.blog_advertising AS blogAdvertising , t1.blog_content AS blogContent , t1.blog_category AS blogCategory , t1.blog_sign AS blogSign , t1.blog_describe AS blogDescribe , t1.blog_views AS blogViews , t1.blog_appreciate AS blogAppreciate , t1.blog_copyright AS blogCopyright , t1.blog_comment As blogComment, t1.blog_release AS blogRelease , t1.blog_establish AS blogEstablish , t1.blog_modification AS blogModification FROM tbl_blog AS t1 ORDER BY blog_establish DESC LIMIT 5
+2020-10-25 14:34:01.049 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.lookAtTheLatest  : ==> Parameters: 
+2020-10-25 14:34:01.074 DEBUG 19748 --- [main] c.i.c.mapper.BlogMapper.lookAtTheLatest  : <==      Total: 5
+2020-10-25 14:34:01.078 DEBUG 19748 --- [main] c.i.c.m.BlogMapper.lookAtTheHottest      : ==>  Preparing: SELECT t1.blog_id AS blogId , t1.blog_title AS blogTitle , t1.blog_advertising AS blogAdvertising , t1.blog_content AS blogContent , t1.blog_category AS blogCategory , t1.blog_sign AS blogSign , t1.blog_describe AS blogDescribe , t1.blog_views AS blogViews , t1.blog_appreciate AS blogAppreciate , t1.blog_copyright AS blogCopyright , t1.blog_comment As blogComment, t1.blog_release AS blogRelease , t1.blog_establish AS blogEstablish , t1.blog_modification AS blogModification FROM tbl_blog AS t1 ORDER BY t1.blog_views DESC LIMIT 5
+2020-10-25 14:34:01.078 DEBUG 19748 --- [main] c.i.c.m.BlogMapper.lookAtTheHottest      : ==> Parameters: 
+2020-10-25 14:34:01.103 DEBUG 19748 --- [main] c.i.c.m.BlogMapper.lookAtTheHottest      : <==      Total: 5
+2020-10-25 14:34:01.112 DEBUG 19748 --- [main] c.i.c.m.CommentMapper.getFirstComment    : ==>  Preparing: SELECT t1.comment_id AS commentId, t1.comment_nickname AS commentNickname, t1.comment_mailbox AS commentMailbox, t1.comment_content AS commentContent, t1.comment_establish AS commentEstablish, t1.comment_admin AS commentAdmin FROM tbl_comment AS t1 WHERE (t1.comment_parent IS NULL OR t1.comment_parent = "") AND t1.comment_blogid = ? ORDER BY t1.comment_establish DESC;
+2020-10-25 14:34:01.113 DEBUG 19748 --- [main] c.i.c.m.CommentMapper.getFirstComment    : ==> Parameters: 3CA16B8C6A234C98A65C205B94221CE3(String)
+2020-10-25 14:34:01.136 DEBUG 19748 --- [main] c.i.c.m.CommentMapper.getFirstComment    : <==      Total: 7
+2020-10-25 14:34:01.137 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 14:34:01.137 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: B821D54958954C169D334D33B77DED79(String)
+2020-10-25 14:34:01.162 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 14:34:01.163 DEBUG 19748 --- [main] c.i.c.mapper.CommentMapper.getComment    : ==>  Preparing: SELECT t1.comment_id AS commentId, t1.comment_nickname AS commentNickname, t1.comment_mailbox AS commentMailbox, t1.comment_content AS commentContent, t1.comment_establish AS commentEstablish, t1.comment_admin AS commentAdmin FROM tbl_comment AS t1 WHERE t1.comment_parent = ? AND t1.comment_blogid = ? ORDER BY t1.comment_establish DESC
+2020-10-25 14:34:01.163 DEBUG 19748 --- [main] c.i.c.mapper.CommentMapper.getComment    : ==> Parameters: B821D54958954C169D334D33B77DED79(String), 3CA16B8C6A234C98A65C205B94221CE3(String)
+2020-10-25 14:34:01.185 DEBUG 19748 --- [main] c.i.c.mapper.CommentMapper.getComment    : <==      Total: 1
+2020-10-25 14:34:01.186 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 14:34:01.187 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 79618C4F5E6746E8B50BFC0C1681BB52(String)
+2020-10-25 14:34:01.208 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 14:34:01.209 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 14:34:01.210 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: B10685ACF00948659525F2235B09B264(String)
+2020-10-25 14:34:01.232 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 14:34:01.233 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 14:34:01.233 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 06F9DABFACE5422798C55953517750F2(String)
+2020-10-25 14:34:01.255 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 14:34:01.256 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 14:34:01.256 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 507A216623AA40ACAA645EFA3A2DCEC4(String)
+2020-10-25 14:34:01.277 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 14:34:01.278 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 14:34:01.278 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 0462E46326294151901FEF3055C03844(String)
+2020-10-25 14:34:01.299 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 14:34:01.300 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 14:34:01.300 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: A09F13651CDB4651B9A7ADD73825305E(String)
+2020-10-25 14:34:01.321 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 14:34:01.322 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 14:34:01.323 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: B006C779B8F94B809E8B8F79544C78AA(String)
+2020-10-25 14:34:01.345 DEBUG 19748 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 14:34:01.352 DEBUG 19748 --- [main] c.i.c.mapper.LinkMapper.selectList       : ==>  Preparing: SELECT link_id,link_modification,link_url,link_establish,link_picture,link_name FROM tbl_link
+2020-10-25 14:34:01.352 DEBUG 19748 --- [main] c.i.c.mapper.LinkMapper.selectList       : ==> Parameters: 
+2020-10-25 14:34:01.373 DEBUG 19748 --- [main] c.i.c.mapper.LinkMapper.selectList       : <==      Total: 4
+2020-10-25 15:08:11.529  INFO 14684 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Starting SpringBootBlogHcyApplicationTests on DESKTOP-TSJVEJ5 with PID 14684 (started by HCY in D:\8.items\blog_HCY\BEBackEnd\spring-boot-blog-hcy)
+2020-10-25 15:08:11.530 DEBUG 14684 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-25 15:08:11.530  INFO 14684 --- [main] c.i.SpringBootBlogHcyApplicationTests    : No active profile set, falling back to default profiles: default
+2020-10-25 15:08:14.031  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.035  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.035  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.035  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.043  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.044  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Boolean, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.044  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.044  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.045  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.062  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.066  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.066  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.066  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.077  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.077  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.077  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.078  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.080  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.081  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.085  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.085  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.085  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.085  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.086  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.089  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.090  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.090  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.090  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.095  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.101  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Interger, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.101  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Interger, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.107  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.108  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.108  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.117  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.117  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.120  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.120  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.121  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.126  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.126  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.129  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.129  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.130  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.133  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.133  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.134  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.134  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.135  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.139  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.139  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.139  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.140  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.140  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.140  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.145  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.150  WARN 14684 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:08:14.170  INFO 14684 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Started SpringBootBlogHcyApplicationTests in 2.863 seconds (JVM running for 3.542)
+2020-10-25 15:08:14.703 DEBUG 14684 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==>  Preparing: SELECT t1.category_id AS categoryId, t1.category_name AS categoryName, t1.category_establish AS categoryEstablish, t1.category_modification AS categoryModification, SUM( CASE WHEN t1.category_id = t2.blog_category THEN 1 ELSE 0 END ) AS blogCount FROM tbl_category AS t1 LEFT JOIN tbl_blog AS t2 ON t1.category_id = t2.blog_category GROUP BY t1.category_id
+2020-10-25 15:08:14.721 DEBUG 14684 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==> Parameters: 
+2020-10-25 15:08:14.827 DEBUG 14684 --- [main] c.i.c.m.CategoryMapper.listAddCount      : <==      Total: 4
+2020-10-25 15:08:14.852 DEBUG 14684 --- [main] c.i.c.m.CategoryMapper.deleteBatchIds    : ==>  Preparing: DELETE FROM tbl_category WHERE category_id IN ( ? , ? )
+2020-10-25 15:08:14.853 DEBUG 14684 --- [main] c.i.c.m.CategoryMapper.deleteBatchIds    : ==> Parameters: 2FE1F4ABEF5347DCB098C4D00BDA16B3(String), ACA2CCF1B1D340FB8593185FCDA378A6(String)
+2020-10-25 15:08:14.877 DEBUG 14684 --- [main] c.i.c.m.CategoryMapper.deleteBatchIds    : <==    Updates: 0
+2020-10-25 15:08:14.881 DEBUG 14684 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==>  Preparing: SELECT t1.category_id AS categoryId, t1.category_name AS categoryName, t1.category_establish AS categoryEstablish, t1.category_modification AS categoryModification, SUM( CASE WHEN t1.category_id = t2.blog_category THEN 1 ELSE 0 END ) AS blogCount FROM tbl_category AS t1 LEFT JOIN tbl_blog AS t2 ON t1.category_id = t2.blog_category GROUP BY t1.category_id
+2020-10-25 15:08:14.881 DEBUG 14684 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==> Parameters: 
+2020-10-25 15:08:14.935 DEBUG 14684 --- [main] c.i.c.m.CategoryMapper.listAddCount      : <==      Total: 4
+2020-10-25 15:08:14.945 DEBUG 14684 --- [main] c.i.c.m.B.numberOfBlogsAndComments       : ==>  Preparing: SELECT t1.blog_id AS blogId , t1.blog_title AS blogTitle , t1.blog_advertising AS blogAdvertising , t1.blog_content AS blogContent , t1.blog_category AS blogCategory , t1.blog_sign AS blogSign , t1.blog_describe AS blogDescribe , t1.blog_views AS blogViews , t1.blog_appreciate AS blogAppreciate , t1.blog_copyright AS blogCopyright , t1.blog_comment As blogComment, t1.blog_release AS blogRelease , t1.blog_establish AS blogEstablish , t1.blog_modification AS blogModification , SUM(CASE WHEN t1.blog_id = t2.comment_blogid THEN 1 ELSE 0 END) AS commentCount FROM tbl_blog AS t1 LEFT JOIN tbl_comment AS t2 ON t1.blog_id = t2.comment_blogid WHERE t1.blog_release = 1 AND t1.blog_comment = 1 GROUP BY t1.blog_id LIMIT ?,?
+2020-10-25 15:08:14.946 DEBUG 14684 --- [main] c.i.c.m.B.numberOfBlogsAndComments       : ==> Parameters: 0(Integer), 10(Integer)
+2020-10-25 15:08:15.091 DEBUG 14684 --- [main] c.i.c.m.B.numberOfBlogsAndComments       : <==      Total: 5
+2020-10-25 15:08:15.098 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.selectCount      : ==>  Preparing: SELECT COUNT( 1 ) FROM tbl_blog
+2020-10-25 15:08:15.098 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.selectCount      : ==> Parameters: 
+2020-10-25 15:08:15.146 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.selectCount      : <==      Total: 1
+2020-10-25 15:08:15.150 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.CheckTheArchive  : ==>  Preparing: SELECT DATE_FORMAT( t1.blog_establish, '%Y-%m') AS date, COUNT(*) AS amount FROM tbl_blog AS t1 GROUP BY DATE_FORMAT( t1.blog_establish, '%Y-%m') ORDER BY date DESC
+2020-10-25 15:08:15.150 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.CheckTheArchive  : ==> Parameters: 
+2020-10-25 15:08:15.177 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.CheckTheArchive  : <==      Total: 4
+2020-10-25 15:08:15.184 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
+2020-10-25 15:08:15.184 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-10%(String)
+2020-10-25 15:08:15.237 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 3
+2020-10-25 15:08:15.239 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
+2020-10-25 15:08:15.239 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-09%(String)
+2020-10-25 15:08:15.265 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 3
+2020-10-25 15:08:15.267 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
+2020-10-25 15:08:15.267 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-08%(String)
+2020-10-25 15:08:15.302 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 2
+2020-10-25 15:08:15.304 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
+2020-10-25 15:08:15.304 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-07%(String)
+2020-10-25 15:08:15.335 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 1
+2020-10-25 15:08:15.339 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.lookAtTheLatest  : ==>  Preparing: SELECT t1.blog_id AS blogId , t1.blog_title AS blogTitle , t1.blog_advertising AS blogAdvertising , t1.blog_content AS blogContent , t1.blog_category AS blogCategory , t1.blog_sign AS blogSign , t1.blog_describe AS blogDescribe , t1.blog_views AS blogViews , t1.blog_appreciate AS blogAppreciate , t1.blog_copyright AS blogCopyright , t1.blog_comment As blogComment, t1.blog_release AS blogRelease , t1.blog_establish AS blogEstablish , t1.blog_modification AS blogModification FROM tbl_blog AS t1 ORDER BY blog_establish DESC LIMIT 5
+2020-10-25 15:08:15.339 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.lookAtTheLatest  : ==> Parameters: 
+2020-10-25 15:08:15.401 DEBUG 14684 --- [main] c.i.c.mapper.BlogMapper.lookAtTheLatest  : <==      Total: 5
+2020-10-25 15:08:15.406 DEBUG 14684 --- [main] c.i.c.m.BlogMapper.lookAtTheHottest      : ==>  Preparing: SELECT t1.blog_id AS blogId , t1.blog_title AS blogTitle , t1.blog_advertising AS blogAdvertising , t1.blog_content AS blogContent , t1.blog_category AS blogCategory , t1.blog_sign AS blogSign , t1.blog_describe AS blogDescribe , t1.blog_views AS blogViews , t1.blog_appreciate AS blogAppreciate , t1.blog_copyright AS blogCopyright , t1.blog_comment As blogComment, t1.blog_release AS blogRelease , t1.blog_establish AS blogEstablish , t1.blog_modification AS blogModification FROM tbl_blog AS t1 ORDER BY t1.blog_views DESC LIMIT 5
+2020-10-25 15:08:15.406 DEBUG 14684 --- [main] c.i.c.m.BlogMapper.lookAtTheHottest      : ==> Parameters: 
+2020-10-25 15:08:15.435 DEBUG 14684 --- [main] c.i.c.m.BlogMapper.lookAtTheHottest      : <==      Total: 5
+2020-10-25 15:08:15.443 DEBUG 14684 --- [main] c.i.c.m.CommentMapper.getFirstComment    : ==>  Preparing: SELECT t1.comment_id AS commentId, t1.comment_nickname AS commentNickname, t1.comment_mailbox AS commentMailbox, t1.comment_content AS commentContent, t1.comment_establish AS commentEstablish, t1.comment_admin AS commentAdmin FROM tbl_comment AS t1 WHERE (t1.comment_parent IS NULL OR t1.comment_parent = "") AND t1.comment_blogid = ? ORDER BY t1.comment_establish DESC;
+2020-10-25 15:08:15.444 DEBUG 14684 --- [main] c.i.c.m.CommentMapper.getFirstComment    : ==> Parameters: 3CA16B8C6A234C98A65C205B94221CE3(String)
+2020-10-25 15:08:15.470 DEBUG 14684 --- [main] c.i.c.m.CommentMapper.getFirstComment    : <==      Total: 7
+2020-10-25 15:08:15.471 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 15:08:15.471 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: B821D54958954C169D334D33B77DED79(String)
+2020-10-25 15:08:15.496 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 15:08:15.497 DEBUG 14684 --- [main] c.i.c.mapper.CommentMapper.getComment    : ==>  Preparing: SELECT t1.comment_id AS commentId, t1.comment_nickname AS commentNickname, t1.comment_mailbox AS commentMailbox, t1.comment_content AS commentContent, t1.comment_establish AS commentEstablish, t1.comment_admin AS commentAdmin FROM tbl_comment AS t1 WHERE t1.comment_parent = ? AND t1.comment_blogid = ? ORDER BY t1.comment_establish DESC
+2020-10-25 15:08:15.497 DEBUG 14684 --- [main] c.i.c.mapper.CommentMapper.getComment    : ==> Parameters: B821D54958954C169D334D33B77DED79(String), 3CA16B8C6A234C98A65C205B94221CE3(String)
+2020-10-25 15:08:15.522 DEBUG 14684 --- [main] c.i.c.mapper.CommentMapper.getComment    : <==      Total: 1
+2020-10-25 15:08:15.523 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 15:08:15.524 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 79618C4F5E6746E8B50BFC0C1681BB52(String)
+2020-10-25 15:08:15.559 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 15:08:15.560 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 15:08:15.560 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: B10685ACF00948659525F2235B09B264(String)
+2020-10-25 15:08:15.590 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 15:08:15.591 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 15:08:15.591 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 06F9DABFACE5422798C55953517750F2(String)
+2020-10-25 15:08:15.616 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 15:08:15.617 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 15:08:15.617 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 507A216623AA40ACAA645EFA3A2DCEC4(String)
+2020-10-25 15:08:15.652 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 15:08:15.652 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 15:08:15.653 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 0462E46326294151901FEF3055C03844(String)
+2020-10-25 15:08:15.710 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 15:08:15.710 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 15:08:15.711 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: A09F13651CDB4651B9A7ADD73825305E(String)
+2020-10-25 15:08:15.740 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 15:08:15.741 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 15:08:15.741 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: B006C779B8F94B809E8B8F79544C78AA(String)
+2020-10-25 15:08:15.766 DEBUG 14684 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 15:08:15.776 DEBUG 14684 --- [main] c.i.c.mapper.LinkMapper.selectList       : ==>  Preparing: SELECT link_id,link_modification,link_url,link_establish,link_picture,link_name FROM tbl_link
+2020-10-25 15:08:15.776 DEBUG 14684 --- [main] c.i.c.mapper.LinkMapper.selectList       : ==> Parameters: 
+2020-10-25 15:08:15.803 DEBUG 14684 --- [main] c.i.c.mapper.LinkMapper.selectList       : <==      Total: 4
+2020-10-25 15:58:24.046  INFO 17508 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Starting SpringBootBlogHcyApplicationTests on DESKTOP-TSJVEJ5 with PID 17508 (started by HCY in D:\8.items\blog_HCY\BEBackEnd\spring-boot-blog-hcy)
+2020-10-25 15:58:24.047 DEBUG 17508 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-25 15:58:24.047  INFO 17508 --- [main] c.i.SpringBootBlogHcyApplicationTests    : No active profile set, falling back to default profiles: default
+2020-10-25 15:58:26.739  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.746  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.747  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.747  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.759  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.759  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Boolean, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.760  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.760  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.761  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.786  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.790  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.791  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.791  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.808  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.809  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.809  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.810  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.814  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.814  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.820  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.820  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.821  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.821  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.821  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.826  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.826  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.826  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.827  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.832  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.838  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Interger, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.838  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Interger, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.843  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.844  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.848  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.849  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.849  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.863  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.864  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.867  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.868  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.869  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.875  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.875  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.877  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.878  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.878  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.881  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.881  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.882  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.882  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.882  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.887  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.887  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.887  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.888  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.888  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.889  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.895  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.899  WARN 17508 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+2020-10-25 15:58:26.919  INFO 17508 --- [main] c.i.SpringBootBlogHcyApplicationTests    : Started SpringBootBlogHcyApplicationTests in 3.094 seconds (JVM running for 3.815)
+2020-10-25 15:58:27.495 DEBUG 17508 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==>  Preparing: SELECT t1.category_id AS categoryId, t1.category_name AS categoryName, t1.category_establish AS categoryEstablish, t1.category_modification AS categoryModification, SUM( CASE WHEN t1.category_id = t2.blog_category THEN 1 ELSE 0 END ) AS blogCount FROM tbl_category AS t1 LEFT JOIN tbl_blog AS t2 ON t1.category_id = t2.blog_category GROUP BY t1.category_id
+2020-10-25 15:58:27.515 DEBUG 17508 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==> Parameters: 
+2020-10-25 15:58:27.664 DEBUG 17508 --- [main] c.i.c.m.CategoryMapper.listAddCount      : <==      Total: 4
+2020-10-25 15:58:27.690 DEBUG 17508 --- [main] c.i.c.m.CategoryMapper.deleteBatchIds    : ==>  Preparing: DELETE FROM tbl_category WHERE category_id IN ( ? , ? )
+2020-10-25 15:58:27.691 DEBUG 17508 --- [main] c.i.c.m.CategoryMapper.deleteBatchIds    : ==> Parameters: 2FE1F4ABEF5347DCB098C4D00BDA16B3(String), ACA2CCF1B1D340FB8593185FCDA378A6(String)
+2020-10-25 15:58:27.718 DEBUG 17508 --- [main] c.i.c.m.CategoryMapper.deleteBatchIds    : <==    Updates: 0
+2020-10-25 15:58:27.722 DEBUG 17508 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==>  Preparing: SELECT t1.category_id AS categoryId, t1.category_name AS categoryName, t1.category_establish AS categoryEstablish, t1.category_modification AS categoryModification, SUM( CASE WHEN t1.category_id = t2.blog_category THEN 1 ELSE 0 END ) AS blogCount FROM tbl_category AS t1 LEFT JOIN tbl_blog AS t2 ON t1.category_id = t2.blog_category GROUP BY t1.category_id
+2020-10-25 15:58:27.722 DEBUG 17508 --- [main] c.i.c.m.CategoryMapper.listAddCount      : ==> Parameters: 
+2020-10-25 15:58:27.806 DEBUG 17508 --- [main] c.i.c.m.CategoryMapper.listAddCount      : <==      Total: 4
+2020-10-25 15:58:27.816 DEBUG 17508 --- [main] c.i.c.m.B.numberOfBlogsAndComments       : ==>  Preparing: SELECT t1.blog_id AS blogId , t1.blog_title AS blogTitle , t1.blog_advertising AS blogAdvertising , t1.blog_content AS blogContent , t1.blog_category AS blogCategory , t1.blog_sign AS blogSign , t1.blog_describe AS blogDescribe , t1.blog_views AS blogViews , t1.blog_appreciate AS blogAppreciate , t1.blog_copyright AS blogCopyright , t1.blog_comment As blogComment, t1.blog_release AS blogRelease , t1.blog_establish AS blogEstablish , t1.blog_modification AS blogModification , SUM(CASE WHEN t1.blog_id = t2.comment_blogid THEN 1 ELSE 0 END) AS commentCount FROM tbl_blog AS t1 LEFT JOIN tbl_comment AS t2 ON t1.blog_id = t2.comment_blogid WHERE t1.blog_release = 1 AND t1.blog_comment = 1 GROUP BY t1.blog_id LIMIT ?,?
+2020-10-25 15:58:27.817 DEBUG 17508 --- [main] c.i.c.m.B.numberOfBlogsAndComments       : ==> Parameters: 0(Integer), 10(Integer)
+2020-10-25 15:58:27.896 DEBUG 17508 --- [main] c.i.c.m.B.numberOfBlogsAndComments       : <==      Total: 5
+2020-10-25 15:58:27.903 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.selectCount      : ==>  Preparing: SELECT COUNT( 1 ) FROM tbl_blog
+2020-10-25 15:58:27.904 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.selectCount      : ==> Parameters: 
+2020-10-25 15:58:27.931 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.selectCount      : <==      Total: 1
+2020-10-25 15:58:27.936 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.CheckTheArchive  : ==>  Preparing: SELECT DATE_FORMAT( t1.blog_establish, '%Y-%m') AS date, COUNT(*) AS amount FROM tbl_blog AS t1 GROUP BY DATE_FORMAT( t1.blog_establish, '%Y-%m') ORDER BY date DESC
+2020-10-25 15:58:27.936 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.CheckTheArchive  : ==> Parameters: 
+2020-10-25 15:58:27.964 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.CheckTheArchive  : <==      Total: 4
+2020-10-25 15:58:27.971 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
+2020-10-25 15:58:27.971 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-10%(String)
+2020-10-25 15:58:28.001 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 3
+2020-10-25 15:58:28.002 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
+2020-10-25 15:58:28.003 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-09%(String)
+2020-10-25 15:58:28.031 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 3
+2020-10-25 15:58:28.033 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
+2020-10-25 15:58:28.033 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-08%(String)
+2020-10-25 15:58:28.061 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 2
+2020-10-25 15:58:28.063 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==>  Preparing: SELECT blog_id,blog_release,blog_copyright,blog_describe,blog_content,blog_appreciate,blog_establish,blog_sign,blog_title,blog_advertising,blog_comment,blog_modification,blog_views,blog_category FROM tbl_blog WHERE (blog_establish LIKE ?) ORDER BY blog_establish DESC
+2020-10-25 15:58:28.063 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.selectList       : ==> Parameters: %2020-07%(String)
+2020-10-25 15:58:28.091 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.selectList       : <==      Total: 1
+2020-10-25 15:58:28.095 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.lookAtTheLatest  : ==>  Preparing: SELECT t1.blog_id AS blogId , t1.blog_title AS blogTitle , t1.blog_advertising AS blogAdvertising , t1.blog_content AS blogContent , t1.blog_category AS blogCategory , t1.blog_sign AS blogSign , t1.blog_describe AS blogDescribe , t1.blog_views AS blogViews , t1.blog_appreciate AS blogAppreciate , t1.blog_copyright AS blogCopyright , t1.blog_comment As blogComment, t1.blog_release AS blogRelease , t1.blog_establish AS blogEstablish , t1.blog_modification AS blogModification FROM tbl_blog AS t1 ORDER BY blog_establish DESC LIMIT 5
+2020-10-25 15:58:28.095 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.lookAtTheLatest  : ==> Parameters: 
+2020-10-25 15:58:28.126 DEBUG 17508 --- [main] c.i.c.mapper.BlogMapper.lookAtTheLatest  : <==      Total: 5
+2020-10-25 15:58:28.129 DEBUG 17508 --- [main] c.i.c.m.BlogMapper.lookAtTheHottest      : ==>  Preparing: SELECT t1.blog_id AS blogId , t1.blog_title AS blogTitle , t1.blog_advertising AS blogAdvertising , t1.blog_content AS blogContent , t1.blog_category AS blogCategory , t1.blog_sign AS blogSign , t1.blog_describe AS blogDescribe , t1.blog_views AS blogViews , t1.blog_appreciate AS blogAppreciate , t1.blog_copyright AS blogCopyright , t1.blog_comment As blogComment, t1.blog_release AS blogRelease , t1.blog_establish AS blogEstablish , t1.blog_modification AS blogModification FROM tbl_blog AS t1 ORDER BY t1.blog_views DESC LIMIT 5
+2020-10-25 15:58:28.130 DEBUG 17508 --- [main] c.i.c.m.BlogMapper.lookAtTheHottest      : ==> Parameters: 
+2020-10-25 15:58:28.159 DEBUG 17508 --- [main] c.i.c.m.BlogMapper.lookAtTheHottest      : <==      Total: 5
+2020-10-25 15:58:28.168 DEBUG 17508 --- [main] c.i.c.m.CommentMapper.getFirstComment    : ==>  Preparing: SELECT t1.comment_id AS commentId, t1.comment_nickname AS commentNickname, t1.comment_mailbox AS commentMailbox, t1.comment_content AS commentContent, t1.comment_establish AS commentEstablish, t1.comment_admin AS commentAdmin FROM tbl_comment AS t1 WHERE (t1.comment_parent IS NULL OR t1.comment_parent = "") AND t1.comment_blogid = ? ORDER BY t1.comment_establish DESC;
+2020-10-25 15:58:28.168 DEBUG 17508 --- [main] c.i.c.m.CommentMapper.getFirstComment    : ==> Parameters: 3CA16B8C6A234C98A65C205B94221CE3(String)
+2020-10-25 15:58:28.197 DEBUG 17508 --- [main] c.i.c.m.CommentMapper.getFirstComment    : <==      Total: 7
+2020-10-25 15:58:28.198 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 15:58:28.198 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: B821D54958954C169D334D33B77DED79(String)
+2020-10-25 15:58:28.226 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 15:58:28.227 DEBUG 17508 --- [main] c.i.c.mapper.CommentMapper.getComment    : ==>  Preparing: SELECT t1.comment_id AS commentId, t1.comment_nickname AS commentNickname, t1.comment_mailbox AS commentMailbox, t1.comment_content AS commentContent, t1.comment_establish AS commentEstablish, t1.comment_admin AS commentAdmin FROM tbl_comment AS t1 WHERE t1.comment_parent = ? AND t1.comment_blogid = ? ORDER BY t1.comment_establish DESC
+2020-10-25 15:58:28.227 DEBUG 17508 --- [main] c.i.c.mapper.CommentMapper.getComment    : ==> Parameters: B821D54958954C169D334D33B77DED79(String), 3CA16B8C6A234C98A65C205B94221CE3(String)
+2020-10-25 15:58:28.255 DEBUG 17508 --- [main] c.i.c.mapper.CommentMapper.getComment    : <==      Total: 1
+2020-10-25 15:58:28.256 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 15:58:28.257 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 79618C4F5E6746E8B50BFC0C1681BB52(String)
+2020-10-25 15:58:28.285 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 15:58:28.286 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 15:58:28.286 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: B10685ACF00948659525F2235B09B264(String)
+2020-10-25 15:58:28.314 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 15:58:28.315 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 15:58:28.316 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 06F9DABFACE5422798C55953517750F2(String)
+2020-10-25 15:58:28.343 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 15:58:28.343 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 15:58:28.344 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 507A216623AA40ACAA645EFA3A2DCEC4(String)
+2020-10-25 15:58:28.371 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 15:58:28.371 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 15:58:28.372 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: 0462E46326294151901FEF3055C03844(String)
+2020-10-25 15:58:28.399 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 15:58:28.400 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 15:58:28.401 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: A09F13651CDB4651B9A7ADD73825305E(String)
+2020-10-25 15:58:28.428 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 15:58:28.429 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==>  Preparing: SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = ?
+2020-10-25 15:58:28.429 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : ==> Parameters: B006C779B8F94B809E8B8F79544C78AA(String)
+2020-10-25 15:58:28.457 DEBUG 17508 --- [main] c.i.c.m.C.judgmentSecondaryReview        : <==      Total: 1
+2020-10-25 15:58:28.464 DEBUG 17508 --- [main] c.i.c.mapper.LinkMapper.selectList       : ==>  Preparing: SELECT link_id,link_modification,link_url,link_establish,link_picture,link_name FROM tbl_link
+2020-10-25 15:58:28.464 DEBUG 17508 --- [main] c.i.c.mapper.LinkMapper.selectList       : ==> Parameters: 
+2020-10-25 15:58:28.493 DEBUG 17508 --- [main] c.i.c.mapper.LinkMapper.selectList       : <==      Total: 4

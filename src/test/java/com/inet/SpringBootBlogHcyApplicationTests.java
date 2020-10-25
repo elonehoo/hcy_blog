@@ -5,10 +5,7 @@ import com.inet.codebase.entity.*;
 import com.inet.codebase.mapper.BlogMapper;
 import com.inet.codebase.mapper.CategoryMapper;
 import com.inet.codebase.mapper.CommentMapper;
-import com.inet.codebase.service.BlogService;
-import com.inet.codebase.service.CategoryService;
-import com.inet.codebase.service.CommentService;
-import com.inet.codebase.service.UserService;
+import com.inet.codebase.service.*;
 import com.inet.codebase.utils.ArchivesUtils;
 import com.inet.codebase.utils.PageUtils;
 import com.inet.codebase.utils.RegesUtils;
@@ -42,6 +39,9 @@ class SpringBootBlogHcyApplicationTests {
 
     @Resource
     private CommentService commentService;
+
+    @Resource
+    private LinkService linkService;
 
     @Resource
     private CommentMapper commentMapper;
@@ -149,5 +149,16 @@ class SpringBootBlogHcyApplicationTests {
     void contextLoads12(){
         int review = 0;
         System.out.println(review != 0);
+    }
+
+    @Test
+    void contextLoads13(){
+        System.out.println(linkService.list());
+    }
+
+    @Test
+    void contextLoads14(){
+        String url = "https://ss.im5i.com/2020/10/25/8faaeb3a004940f2bd6db24a6e281631.jpg";
+        System.out.println(RegesUtils.isUrl(url));
     }
 }

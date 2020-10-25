@@ -9,6 +9,8 @@ import com.inet.codebase.service.UserService;
 import com.inet.codebase.utils.Result;
 import com.inet.codebase.utils.UUIDUtils;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
@@ -42,6 +44,12 @@ public class MessageController {
      * @param messageId 留言序号
      * @return Result风格的对象
      */
+    @ApiOperation("添加的留言")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="Token",value="令牌",dataType="String", paramType = "query",example=""),
+            @ApiImplicitParam(name="Content",value="内容",dataType="String", paramType = "query",example=""),
+            @ApiImplicitParam(name="MessageId",value="留言序号",dataType="String", paramType = "query",example="")
+    })
     @PostMapping("/append")
     public Result postAppend(@RequestParam(value = "Token",defaultValue = "") String token,
                              @RequestParam(value = "Content",defaultValue = "") String content,
@@ -94,6 +102,10 @@ public class MessageController {
      * @return Result风格的对象
      */
     @ApiOperation("删除留言及其子集留言")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="Token",value="令牌",dataType="String", paramType = "query",example=""),
+            @ApiImplicitParam(name="MessageId",value="留言序号",dataType="String", paramType = "query",example=""),
+    })
     @DeleteMapping("/delete")
     public Result Delete(@RequestParam(value = "Token",defaultValue = "") String token,
                          @RequestParam(value = "MessageId",defaultValue = "") String messageId){

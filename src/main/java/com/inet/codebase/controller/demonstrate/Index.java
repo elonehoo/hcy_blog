@@ -3,12 +3,8 @@ package com.inet.codebase.controller.demonstrate;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.inet.codebase.entity.Blog;
-import com.inet.codebase.entity.Comment;
-import com.inet.codebase.entity.User;
-import com.inet.codebase.service.BlogService;
-import com.inet.codebase.service.CommentService;
-import com.inet.codebase.service.UserService;
+import com.inet.codebase.entity.*;
+import com.inet.codebase.service.*;
 import com.inet.codebase.utils.Result;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -39,6 +35,12 @@ public class Index {
 
     @Resource
     private CommentService commentService;
+
+    @Resource
+    private LinkService linkService;
+
+    @Resource
+    private PictureService pictureService;
 
     private final String ADMIN = "DED1C274D13E401196789124E7303C40";
 
@@ -143,6 +145,39 @@ public class Index {
         map.put( "blog" , blog );
         //返回值
         return new Result(map,"查看博客得请求",100);
+    }
+
+    /**
+     * 查看所有的友链
+     * @author HCY
+     * @since 2020-10-24
+     * @return Result风格的对象
+     */
+    @ApiOperation("查看所有的友链")
+    @GetMapping("/link")
+    public Result GetLink(){
+        return new Result(linkService.list() , "查看友链的请求",100);
+    }
+
+    /**
+     * 查看照片墙
+     * @author HCY
+     * @since 2020-10-25
+     * @param current 页数
+     * @param size 条目数
+     * @return Result风格的对象
+     */
+    @ApiOperation("获取照片,分页模式的")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="Current",value="页数",dataType="Integer", paramType = "query",defaultValue = "1"),
+            @ApiImplicitParam(name="Size",value="条目数",dataType="Integer", paramType = "query",defaultValue = "10"),
+    })
+    @GetMapping("/picture")
+    public Result getPicture(@RequestParam(value = "Current",defaultValue = "1") Integer current,
+                             @RequestParam(value = "Size",defaultValue = "10") Integer size){
+        Page<Picture> picturePage = new Page<>(current, size);
+        IPage<Picture> page = pictureService.page(picturePage);
+        return new Result(page,"查看照片墙",100);
     }
 
 }
