@@ -46,6 +46,9 @@ class SpringBootBlogHcyApplicationTests {
     @Resource
     private CommentMapper commentMapper;
 
+    @Resource
+    private MessageService messageService;
+
     final String text = "你好呀";
     @Test
     void contextLoads() {
@@ -160,5 +163,34 @@ class SpringBootBlogHcyApplicationTests {
     void contextLoads14(){
         String url = "https://ss.im5i.com/2020/10/25/8faaeb3a004940f2bd6db24a6e281631.jpg";
         System.out.println(RegesUtils.isUrl(url));
+    }
+
+    @Test
+    void contextLoads15(){
+        System.out.println(messageService.getPageMessage(1, 5));
+    }
+
+    @Test
+    void contextLoads16(){
+        System.out.println("内容:" + commentService.getPageComment("3CA16B8C6A234C98A65C205B94221CE3", 1, 10));
+        System.out.println("条目数" + commentService.getTotal("3CA16B8C6A234C98A65C205B94221CE3"));
+
+    }
+
+    @Test
+    void contextLoads17(){
+        int a = 5;
+        for (int i = -a ; i <= a ; i++){
+            for (int j = -a ; j <= a ; j++){
+                if (Math.abs(i) == Math.abs(j)){
+                    System.out.print(Math.abs(i) + 1);
+                }else if (((i + Math.abs(j)) < 0) || ((-i + Math.abs(j)) < 0)){
+                    System.out.print(Math.abs(i) + 1);
+                }else {
+                    System.out.print(Math.abs(j) + 1);
+                }
+            }
+            System.out.println();
+        }
     }
 }

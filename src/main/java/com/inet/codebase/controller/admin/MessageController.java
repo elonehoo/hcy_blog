@@ -6,6 +6,7 @@ import com.inet.codebase.entity.Message;
 import com.inet.codebase.entity.User;
 import com.inet.codebase.service.MessageService;
 import com.inet.codebase.service.UserService;
+import com.inet.codebase.utils.PageUtils;
 import com.inet.codebase.utils.Result;
 import com.inet.codebase.utils.UUIDUtils;
 import io.swagger.annotations.Api;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.Date;
+import java.util.List;
 
 /**
  * <p>
@@ -34,6 +36,38 @@ public class MessageController {
 
     @Resource
     private UserService userService;
+
+    /**
+     * 获取的留言
+     * @author HCY
+     * @since 2020-10-25
+     * @param token 令牌
+     * @param current 页数
+     * @param size 条目数
+     * @return Result风格的对象
+     */
+    @ApiOperation("获取的留言")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="Token",value="令牌",dataType="String", paramType = "query",example=""),
+            @ApiImplicitParam(name="Current",value="页数",dataType="Integer", paramType = "query",example="1"),
+            @ApiImplicitParam(name="Size",value="条目数",dataType="Integer", paramType = "query",example="10")
+    })
+    @GetMapping("/list")
+    public Result getList(@RequestParam(value = "Token",defaultValue = "") String token,
+                          @RequestParam(value = "Current",defaultValue = "1") Integer current,
+                          @RequestParam(value = "Size",defaultValue = "10") Integer size){
+        PageUtils page = new PageUtils();
+        //判断token是否过期
+        Result decideToken = decideToken(token, "获取所有留言");
+        if(decideToken.getCode() != 100){
+            return decideToken;
+        }
+        page.setResultList(messageService.getPageMessage(current, size));
+        page.setCurrent(current);
+        page.setPageNavSize(size);
+        page.setTotalCount(messageService.getTotal());
+        return new Result(page,"获取所有留言",100);
+    }
 
     /**
      * 留言的添加

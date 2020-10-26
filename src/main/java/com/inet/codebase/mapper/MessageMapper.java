@@ -41,4 +41,20 @@ public interface MessageMapper extends BaseMapper<Message> {
      * @return 集合
      */
     List<Message> getListTwoMessage(String messageId);
+
+    /**
+     * 分页展示所有的留言
+     * @author HCY
+     * @since 2020-10-25
+     * @param current 页数
+     * @param size 条目数
+     * @return 集合
+     */
+    List<Message> getPageMessage(Integer current,Integer size);
+
+    /**
+     * 分页展示所有的留言
+     * @return 整数
+     */
+    Integer getTotal();
 }

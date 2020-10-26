@@ -2,12 +2,15 @@ package com.inet.codebase.controller.admin;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.inet.codebase.entity.Blog;
 import com.inet.codebase.entity.Comment;
 import com.inet.codebase.entity.User;
 import com.inet.codebase.service.BlogService;
 import com.inet.codebase.service.CommentService;
 import com.inet.codebase.service.UserService;
+import com.inet.codebase.utils.PageUtils;
 import com.inet.codebase.utils.Result;
 import com.inet.codebase.utils.UUIDUtils;
 import io.swagger.annotations.Api;
@@ -38,6 +41,45 @@ public class CommentController {
 
     @Resource
     private UserService userService;
+
+    /**
+     * 获取评论
+     * @author HCY
+     * @since 2020-10-25
+     * @param token 令牌
+     * @param blogId 博客序号
+     * @param current 页数
+     * @param size 条目数
+     * @return Result风格的对象
+     */
+    @ApiOperation("获取评论")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="Token",value="令牌",dataType="String", paramType = "query",example=""),
+            @ApiImplicitParam(name="BlogId",value="博客序号",dataType="String", paramType = "query",example=""),
+            @ApiImplicitParam(name="Current",value="页数",dataType="Integer", paramType = "query",example="1"),
+            @ApiImplicitParam(name="Size",value="条目数",dataType="Integer", paramType = "query",example="10"),
+    })
+    @GetMapping("/list")
+    public Result getList(@RequestParam(value = "Token",defaultValue = "") String token,
+                          @RequestParam(value = "BlogId",defaultValue = "") String blogId,
+                          @RequestParam(value = "Current",defaultValue = "1") Integer current,
+                          @RequestParam(value = "Size",defaultValue = "10") Integer size){
+        PageUtils pageUtils = new PageUtils();
+        //判断token是否过期
+        Result decideToken = decideToken(token, "获取评论请求");
+        if (decideToken.getCode() != 100){
+            return  decideToken;
+        }
+        //判断博客序号是否有效
+        if(blogService.getById(blogId) == null){
+            return new Result("找不到该博客","获取评论请求",101);
+        }
+        pageUtils.setResultList(commentService.getPageComment(blogId, current, size));
+        pageUtils.setCurrent(current);
+        pageUtils.setPageNavSize(size);
+        pageUtils.setTotalCount(commentService.getTotal(blogId));
+        return new Result(pageUtils,"获取评论请求",100);
+    }
 
     /**
      * 管理员添加评论

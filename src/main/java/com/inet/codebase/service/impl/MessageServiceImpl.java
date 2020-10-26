@@ -47,6 +47,39 @@ public class MessageServiceImpl extends ServiceImpl<MessageMapper, Message> impl
     }
 
     /**
+     * 分页展示所有的留言
+     * @author HCY
+     * @since 2020-10-25
+     * @param current 页数
+     * @param size 条目数
+     * @return 集合
+     */
+    @Override
+    public List<Message> getPageMessage(Integer current , Integer size) {
+        current =(current * size) - size;
+        List<Message> pageMessage = messageMapper.getPageMessage(current, size);
+        for (int i = 0 ; i < pageMessage.size() ; i++){
+            Message message = pageMessage.get(i);
+            //判断是否有子集留言
+            if (isThereASubset(message.getMessageId())){
+                message.setMessageList( getMessageList(message.getMessageId()) );
+            }
+            //替换
+            Collections.replaceAll(pageMessage, pageMessage.get(i), message);
+        }
+        return pageMessage;
+    }
+
+    /**
+     *
+     * @return
+     */
+    @Override
+    public Integer getTotal(){
+        return messageMapper.getTotal();
+    }
+
+    /**
      * 判断是否有子集
      * @author HCY
      * @since 2020-10-23

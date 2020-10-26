@@ -46,6 +46,37 @@ public class CommentServiceImpl extends ServiceImpl<CommentMapper, Comment> impl
         return firstComments;
     }
 
+    @Override
+    public List<Comment> getPageComment(String blogId, Integer current, Integer size) {
+        //计算页数
+        current = (current * size) - size;
+        List<Comment> pageComment = commentMapper.getPageComment(blogId, current, size);
+        //进行循环,并且判断是否有子集评论
+        for (int i = 0; i < pageComment.size(); i++) {
+            //获取到需要修改的集合
+            Comment comment = pageComment.get(i);
+            //如果是true则是有子集评论
+            if ( judgmentSecondaryReview(comment.getCommentId()) ) {
+                comment.setCommentTwo(secondaryComments(blogId,comment.getCommentId()));
+            }
+            Collections.replaceAll(pageComment,pageComment.get(i),comment);
+        }
+        return pageComment;
+    }
+
+
+    /**
+     * 获取所有一级评论
+     * @author HCY
+     * @since 2020-10-25
+     * @param blogId 博客序号
+     * @return 整数
+     */
+    @Override
+    public Integer getTotal(String blogId) {
+        return commentMapper.getTotal(blogId);
+    }
+
     /**
      * 判断是否有二级以下评论
      * @author HCY

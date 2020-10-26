@@ -68,6 +68,12 @@ public class Comment implements Serializable {
      */
     private Boolean commentAdmin;
 
+    /**
+     * 子集评论
+     */
     @TableField(exist = false)
     private List<Comment> commentTwo;
+
+    @TableField(exist = false)
+    private Integer commentTwoSize;
 }

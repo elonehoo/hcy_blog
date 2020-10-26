@@ -42,4 +42,37 @@
         ORDER BY
             message_establish DESC
     </select>
+    <!--分页展示所有的留言-->
+    <select id="getPageMessage" resultType="com.inet.codebase.entity.Message">
+        SELECT
+            message_id AS messageId,
+            message_nickname AS messageNickname,
+            message_mailbox AS messageMailbox,
+            message_establish AS messageEstablish,
+            message_parent AS messageParent,
+            message_admin AS messageAdmin,
+            message_content AS messageContent
+        FROM
+            tbl_message
+        WHERE
+            ( message_parent IS NULL OR message_parent = "" )
+        ORDER BY
+            message_establish DESC
+        limit #{current} , #{size}
+    </select>
+
+    <select id="getTotal" resultType="java.lang.Integer">
+        SELECT
+            COUNT(*)
+        FROM
+            tbl_message
+        WHERE
+            (
+                message_parent IS NULL
+                OR
+                message_parent = ""
+            )
+    </select>
+
+
 </mapper>

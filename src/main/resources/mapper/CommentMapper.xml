@@ -43,4 +43,38 @@
     <select id="judgmentSecondaryReview" resultType="java.lang.Integer">
         SELECT COUNT(*) FROM tbl_comment WHERE comment_parent = #{parentId}
     </select>
+    <!--分页查询评论-->
+    <select id="getPageComment" resultType="com.inet.codebase.entity.Comment">
+        SELECT
+            t1.comment_id AS commentId,
+            t1.comment_nickname AS commentNickname,
+            t1.comment_mailbox AS commentMailbox,
+            t1.comment_content AS commentContent,
+            t1.comment_establish AS commentEstablish,
+            t1.comment_admin AS commentAdmin
+        FROM
+            tbl_comment AS t1
+        WHERE
+            (t1.comment_parent IS NULL
+            OR
+            t1.comment_parent = "")
+            AND
+            t1.comment_blogid = #{blogId}
+        ORDER BY
+            t1.comment_establish DESC
+        LIMIT #{current},#{size};
+    </select>
+    <!--获取所有一级评论-->
+    <select id="getTotal" resultType="java.lang.Integer">
+        SELECT
+            COUNT(*)
+        FROM
+            tbl_comment AS t1
+        WHERE
+            (t1.comment_parent IS NULL
+           OR
+          t1.comment_parent = "")
+            AND
+        t1.comment_blogid = #{blogId}
+    </select>
 </mapper>
