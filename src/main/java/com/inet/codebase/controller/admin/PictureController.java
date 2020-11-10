@@ -33,6 +33,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/picture")
 @Api(tags = {"照片模块"},description = "管理模块")
+@CrossOrigin
 public class PictureController {
     @Resource
     private PictureService pictureService;

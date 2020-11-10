@@ -30,6 +30,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/message")
 @Api(tags = {"留言模块"},description = "管理模块")
+@CrossOrigin
 public class MessageController {
     @Resource
     private MessageService messageService;
