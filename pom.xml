@@ -64,7 +64,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
-            <version>1.2.13-SNSAPSHOT</version>
+            <version>1.2.15</version>
         </dependency>
 
         <dependency>
